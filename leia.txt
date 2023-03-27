@@ -1,2 +1,5 @@
 
 Cada branch um nvim
+
+para o nvim: no arquivo: ~/Personal_Bash
+configurar: export MYVIMRC='~/.config/nvim/init.lua'  # apontando o nvim
