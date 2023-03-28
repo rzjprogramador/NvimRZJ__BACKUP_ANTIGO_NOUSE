@@ -1,11 +1,16 @@
 local g = vim.g
 local opt = vim.opt
 local cmd = vim.cmd
+local api = vim.api
 
--- mapleader key
-g.mapleader = ','
+-----------------------------------------------------------
+--  Mapleader key leader Teclalider :: definida como espaço
+-----------------------------------------------------------
+g.mapleader = api.nvim_replace_termcodes('<C>', false, false, true)
 
--- Original Command in vimscript
+-----------------------------------------------------------
+--  Original Command in vimscript
+-----------------------------------------------------------
 cmd[[ 
   autocmd FileType css setl iskeyword+=-
   autocmd FileType scss setl iskeyword+=@-@
@@ -16,7 +21,9 @@ cmd[[
 -- SuperTab setup
 g.SuperTabDefaultCompletionType = '<C-n>'
 
--- General Setup
+-----------------------------------------------------------
+--  General Setup
+-----------------------------------------------------------
 opt.compatible = false
 opt.mouse = 'a'
 opt.swapfile = false
@@ -25,12 +32,15 @@ opt.history = 100
 opt.lazyredraw = true
 opt.synmaxcol = 240
 
--- Theme
+-----------------------------------------------------------
+--  Theme
+-----------------------------------------------------------
 opt.termguicolors = true
 cmd [[ colorscheme onedark ]]
-g.transparent_enabled = true
 
--- Editor
+-----------------------------------------------------------
+--  Editor
+-----------------------------------------------------------
 opt.number = true
 opt.wrap = false
 opt.signcolumn = 'yes'

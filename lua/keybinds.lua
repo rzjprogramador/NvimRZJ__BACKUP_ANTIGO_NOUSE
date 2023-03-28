@@ -52,12 +52,13 @@ set("n", "<Leader>{", "viw<ESC>a}<esc>bi{<esc>ela", ns)
 set("n", "<Leader><", "viw<ESC>a><esc>bi<<esc>ela", ns)
 
 -- Complete with Enter Key coc sugest
-cmd[[
-  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-  inoremap <silent><expr><CR> pumvisible() ? coc#_select_confirm()
-    \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
-]]
+-- cmd[[
+--   inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+--   inoremap <silent><expr><CR> pumvisible() ? coc#_select_confirm()
+--     \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
+-- ]]
 
--- NerdTree toggle key
-set("n", "<Leader>o", ":NERDTreeToggle<CR>", ns)
-set("n", "<Leader>R", ":NERDTreeToggle<CR>R", ns)
+-- Explorer :: NerdTree toggle key
+set("n", "<Leader>e", ":NERDTreeToggle<CR>", ns)
+set("i", "<Leader>e", ":NERDTreeToggle<CR>", ns)
+set("n", "<Leader>E", ":NERDTreeToggle<CR>R", ns)
