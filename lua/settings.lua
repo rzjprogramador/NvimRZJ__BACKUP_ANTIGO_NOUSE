@@ -1,13 +1,3 @@
-local g = vim.g
-local opt = vim.opt
-local cmd = vim.cmd
-local set = vim.api.nvim_set_keymap
-
------------------------------------------------------------
---  Theme
------------------------------------------------------------
-opt.termguicolors = true
-cmd [[ colorscheme onedark ]]
 
 -----------------------------------------------------------
 --  Mapleader key leader Teclalider :: definida como :: espaço
@@ -15,43 +5,48 @@ cmd [[ colorscheme onedark ]]
 vim.g.mapleader = ' '
 options = { noremap = true }
 
-
--- SuperTab setup
-g.SuperTabDefaultCompletionType = '<C-n>'
-
 -----------------------------------------------------------
---  General Setup
+--  Visual :: theme
 -----------------------------------------------------------
-opt.compatible = false
-opt.mouse = 'a'
-opt.swapfile = false
-opt.hidden = true
-opt.history = 100
-opt.lazyredraw = true
-opt.synmaxcol = 240
+vim.cmd([[ set bg=dark ]])
+vim.cmd([[ set termguicolors ]])
+vim.cmd([[ colorscheme dracula ]])
+-- tops: onedark -dracula
 
 -----------------------------------------------------------
 --  Editor
 -----------------------------------------------------------
-opt.number = true
-opt.wrap = false
-opt.signcolumn = 'yes'
-opt.showmatch = true
-opt.showmode = false
-opt.foldmethod = 'marker'
-opt.splitright = true
-opt.splitbelow = true
-opt.conceallevel = 0
---opt.colorcolumn = '80'
-opt.cursorline = true
-opt.scrolloff = 10
-opt.expandtab = true
-opt.shiftwidth = 2
-opt.tabstop = 2
-opt.smartindent = true
-opt.list = true
-opt.shortmess:append { c = true }
-opt.whichwrap:append {
+vim.cmd([[ let extension = expand('%:e') ]])
+vim.cmd([[ let filenamev = expand('%:t') ]])
+
+vim.cmd([[ set encoding=utf8 ]])
+vim.cmd([[ set nu! ]])
+vim.cmd([[ set mouse=a ]])
+vim.cmd([[ set wildmenu ]])
+vim.cmd([[ set confirm ]])
+vim.cmd([[ set incsearch ]])
+vim.cmd([[ set title ]])
+vim.cmd([[ set t_Co=256 ]])
+vim.cmd([[ set shiftwidth=2 ]])
+vim.cmd([[ set softtabstop=2 ]])
+vim.cmd([[ set expandtab ]])
+vim.cmd([[ set shiftwidth=2 ]])
+vim.cmd([[ set softtabstop=2 ]])
+vim.cmd([[ set expandtab ]])
+vim.cmd([[ set guicursor= ]])
+vim.cmd([[ set cursorline ]])
+vim.cmd([[ syntax on ]])
+
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
+
+
+vim.opt.shortmess:append { c = true }
+vim.opt.whichwrap:append {
 	['<'] = true,
 	['>'] = true,
 	[','] = true,
@@ -60,19 +55,9 @@ opt.whichwrap:append {
 }
 
 -- Terminal
-cmd [[command! Term :botright split term://$SHELL]]
-cmd [[
+vim.cmd [[command! Term :botright split term://$SHELL]]
+vim.cmd [[
   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
   autocmd TermOpen * startinsert
   autocmd BufLeave term://* stopinsert
 ]]
-
--- Floaterminal setup - TODO - NAO QUERO
--- cmd [[
---   let g:floaterm_keymap_new = '<Leader>ft'
---   let g:floaterm_keymap_prev = '<Leader>fp'
---   let g:floaterm_keymap_next = '<Leader>fn'
---   let g:floaterm_keymap_toggle = '<Leader>t'
---   let g:floaterm_keymap_kill = '<Leader>fk'
---   let g:floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\ )<'
--- ]]

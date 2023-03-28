@@ -9,5 +9,16 @@ const obj1: Props = {
   numero: 45,
 }
 
+function foo() {
+  return "foo"
+}
+
+function bar() {
+  return "bar"
+}
+
+console.log(foo())
+console.log(bar())
+
 console.log(obj1)
 console.log("Hello Word")
