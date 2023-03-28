@@ -31,9 +31,9 @@ set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", ns)
 set("n", "<C-d>", ":bd<CR>", ns)
 set("n", "<C-t>", ":tabnew <CR>", ns)
 
--- Nvim Tree
-set("n", "<C-n>", ":NvimTreeToggle<CR>", ns)
-set("n", "<Leader>n", ":NvimTreeFindFile<CR>", ns)
+-- Nvim Tree -- TODO VE RO QUE É NvimTreeToggle :: JA REMAPEEI COM TERRO C-N
+-- set("n", "<C-n>", ":NvimTreeToggle<CR>", ns) 
+-- set("n", "<Leader>n", ":NvimTreeFindFile<CR>", ns)
 
 -- Telescope
 set("n", "<Leader><Leader>", ":Telescope find_files<CR>", ns)

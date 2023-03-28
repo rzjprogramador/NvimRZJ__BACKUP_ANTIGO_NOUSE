@@ -4,20 +4,17 @@ local cmd = vim.cmd
 local set = vim.api.nvim_set_keymap
 
 -----------------------------------------------------------
+--  Theme
+-----------------------------------------------------------
+opt.termguicolors = true
+cmd [[ colorscheme onedark ]]
+
+-----------------------------------------------------------
 --  Mapleader key leader Teclalider :: definida como :: espaço
 -----------------------------------------------------------
 vim.g.mapleader = ' '
 options = { noremap = true }
 
------------------------------------------------------------
---  Original Command in vimscript
------------------------------------------------------------
-cmd[[ 
-  autocmd FileType css setl iskeyword+=-
-  autocmd FileType scss setl iskeyword+=@-@
-
-  autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions -=o
-]]
 
 -- SuperTab setup
 g.SuperTabDefaultCompletionType = '<C-n>'
@@ -32,12 +29,6 @@ opt.hidden = true
 opt.history = 100
 opt.lazyredraw = true
 opt.synmaxcol = 240
-
------------------------------------------------------------
---  Theme
------------------------------------------------------------
-opt.termguicolors = true
-cmd [[ colorscheme onedark ]]
 
 -----------------------------------------------------------
 --  Editor
@@ -76,12 +67,12 @@ cmd [[
   autocmd BufLeave term://* stopinsert
 ]]
 
--- Floaterminal setup
-cmd [[
-  let g:floaterm_keymap_new = '<Leader>ft'
-  let g:floaterm_keymap_prev = '<Leader>fp'
-  let g:floaterm_keymap_next = '<Leader>fn'
-  let g:floaterm_keymap_toggle = '<Leader>t'
-  let g:floaterm_keymap_kill = '<Leader>fk'
-  let g:floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\ )<'
-]]
+-- Floaterminal setup - TODO - NAO QUERO
+-- cmd [[
+--   let g:floaterm_keymap_new = '<Leader>ft'
+--   let g:floaterm_keymap_prev = '<Leader>fp'
+--   let g:floaterm_keymap_next = '<Leader>fn'
+--   let g:floaterm_keymap_toggle = '<Leader>t'
+--   let g:floaterm_keymap_kill = '<Leader>fk'
+--   let g:floaterm_title='>( /ᐠ｡ꞈ｡ᐟ\ )<'
+-- ]]
