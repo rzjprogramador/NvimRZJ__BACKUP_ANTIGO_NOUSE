@@ -12,7 +12,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
     Plug 'ryanoasis/vim-devicons'
-    Plug 'voldikss/vim-floaterm'
     Plug 'ervandew/supertab'
 
     Plug 'sheerun/vim-polyglot'
