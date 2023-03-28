@@ -1,12 +1,13 @@
 local g = vim.g
 local opt = vim.opt
 local cmd = vim.cmd
-local api = vim.api
+local set = vim.api.nvim_set_keymap
 
 -----------------------------------------------------------
---  Mapleader key leader Teclalider :: definida como espaço
+--  Mapleader key leader Teclalider :: definida como :: espaço
 -----------------------------------------------------------
-g.mapleader = api.nvim_replace_termcodes('<C>', false, false, true)
+vim.g.mapleader = ' '
+options = { noremap = true }
 
 -----------------------------------------------------------
 --  Original Command in vimscript

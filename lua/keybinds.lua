@@ -4,7 +4,7 @@ local cmd = vim.cmd
 
 -- Command
 set("n", ";", ":", { noremap = true })
-set("n", "<Leader>r", ":luafile %<CR>", ns)
+set("n", "<Leader>r", ":luafile %<CR>", ns) -- reload propagar arquivo lua
 
 -- Terminal
 set("t", "<Esc>", "<C-\\><C-n><C-w><C-w>", ns)

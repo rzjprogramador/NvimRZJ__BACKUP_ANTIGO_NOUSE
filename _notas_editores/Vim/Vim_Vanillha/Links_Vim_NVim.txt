@@ -1,5 +1,0 @@
-
-links: [
-  configuracoes: https://blog.elvessousa.com.br/post/neovim-lua,
-
-]
