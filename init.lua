@@ -1,7 +1,8 @@
-require 'vim-plug'
-require 'settings'
-require 'maps'
-require 'keybinds'
+require 'plugins'
+require 'maps_vim'
+require 'maps_plugs'
+require 'sets_vim'
+require 'movimentacoes'
 
 -- ao reiniciar nvim volta mesmo lugar que parou o cursor
 vim.cmd([[

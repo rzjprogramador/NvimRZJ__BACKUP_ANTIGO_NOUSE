@@ -17,6 +17,10 @@ function bar() {
   return "bar"
 }
 
+function       foo  ()   {
+return 10
+}
+
 console.log(foo())
 console.log(bar())
 

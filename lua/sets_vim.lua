@@ -1,8 +1,8 @@
 
 -----------------------------------------------------------
---  Mapleader key leader Teclalider :: definida como :: espaço
+--  Mapleader key leader Teclalider :: definida como :: Shift
 -----------------------------------------------------------
-vim.g.mapleader = ' '
+vim.g.mapleader = '<S>'
 options = { noremap = true }
 
 -----------------------------------------------------------

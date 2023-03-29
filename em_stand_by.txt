@@ -1,0 +1,23 @@
+PARA MAPS_PLUGS:
+
+-- Complete with Enter Key coc sugest
+-- cmd[[
+--   inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+--   inoremap <silent><expr><CR> pumvisible() ? coc#_select_confirm()
+--     \: "\<C-g>u\<CR>\<C-r>=coc#on_enter()\<CR>"
+-- ]]
+
+
+-- explorer NerdTree  >>  S-e -- Shift-E 
+-- set("n", "<S-e>", ":NERDTreeToggle<CR>", ns)
+-- set("i", "<S-e>", ":NERDTreeToggle<CR>", ns)
+-- set("n", "<S-E>", ":NERDTreeToggle<CR>R", ns)
+
+-- explorer nativo vim BY TERRO >>  S-e -- Shift-e -- TODO NAO TA ROLANDO - DEVE SER PQ JA TEM O NEERDTree
+vim.cmd([[ nnoremap <c-e> :NvimTreeToggle<CR> ]])
+vim.cmd([[ inoremap <c-e> <Esc>:NvimTreeToggle<CR>l ]])
+vim.cmd([[ vnoremap <c-e> <Esc>:NvimTreeToggle<CR> ]])
+
+-- Nvim Tree -- TODO VE RO QUE É NvimTreeToggle :: JA REMAPEEI COM TERRO C-N
+-- set("n", "<C-n>", ":NvimTreeToggle<CR>", ns) 
+-- set("n", "<Leader>n", ":NvimTreeFindFile<CR>", ns)
