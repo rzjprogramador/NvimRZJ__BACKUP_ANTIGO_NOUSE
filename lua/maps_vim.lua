@@ -1,60 +1,37 @@
 -----------------------------------------------------------
 --  Original Command in vimscript
 -----------------------------------------------------------
+
 -- by carneiro
-vim.cmd[[ 
+vim.cmd([[ 
   autocmd FileType css setl iskeyword+=-
   autocmd FileType scss setl iskeyword+=@-@
 
   autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions -=o
-]]
+]])
 
--- by- terro
-vim.cmd([[ map q :q<CR> ]])
-vim.cmd([[ nnoremap <C-s> :w<CR> ]])
-vim.cmd([[ inoremap <C-s> <Esc>:w<CR>l ]])
-vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
-vim.cmd([[ map <C-a> ggVG ]])
+-- Salva e fecha arquivos com perguntas
+vim.cmd([[
+  inoremap <C-s> <esc>:w<cr>                 " salva :: i
+  nnoremap <C-s> :w<cr>                      " salva :: n
+
+  inoremap <C-q> <esc>:wq!<cr>               " salva e fecha forcado :: i 
+  nnoremap <C-q> :wq!<cr>                    " salva e fecha forçado :: n
+
+  inoremap <C-d> <esc>:q!<cr>               " fecha forcado arquivo sem salvar :: i 
+  nnoremap <C-d> :q!<cr>                    " fecha forçado arquivo sem salvar :: n
+    
+  inoremap <C-k> <esc>:exit<cr>               " fecha dando exit no foco :: terminais
+  nnoremap <C-k> :exit<cr>
+
+  inoremap ;; <Esc>
+
+]])
 
 vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
+
+-- EASY CAPS :: Transformar selecionado em Upper e Lower case >> Shift + u 
 vim.cmd([[
-	function! AutoCpp()
-	  call append(0, '#include <iostream>')
-	  call append(1, '')
-	  call append(2, 'int main( int argc , char **argv ){')
-	  call append(3, "  std::cout << \"Hello, World!\" << '\\n';")
-	  call append(4, '  return 0;')
-	  call append(5, '}')
-	  call cursor(4, 17)
-	endfunction	
-        autocmd BufNewFile *.cpp :call AutoCpp()
+  inoremap <c-u> <ESC>viwUi
+  nnoremap <c-u> viwU<Esc>
 ]])
-
-vim.cmd([[ 
-  function! AutoC()
-    call append(0, '#include <stdio.h>')
-    call append(1, '')
-    call append(2, 'int main( int argc , char **argv ){')
-    call append(3, "  printf(\"Hello, World!\\n\");")
-    call append(4, '  return 0;')
-    call append(5, '}')
-    call cursor(4, 17)
-  endfunction
-  autocmd BufNewFile *.c :call AutoC()
-]])
-
--- SHORT KEY TO COMPILE
-vim.cmd([[
-function! Run()
-  :echo 'Compiling...'
-  :terminal make
-  :bwipeout
-endfunction
-
-nnoremap <C-t> :call Run()<CR>
-inoremap <C-t> :call Run()<CR>
-vnoremap <C-t> :call Run()<CR>
-
-]])
-
-

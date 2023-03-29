@@ -24,6 +24,12 @@ vim.cmd([[ vnoremap <c-e> <Esc>:NvimTreeToggle<CR> ]])
 
 -- ARRUMAR
 
+-- MAPS VIM
+-- seleciona tudo >> C-a
+vim.cmd([[ map <C-a> <esc>ggVG<esc> ]]) -- TODO
+-- vim.cmd([[ inoremap <C-a> ggVG ]]) 
+-- vim.cmd([[ nnoremap <C-a> ggVG ]]) 
+
 -- Comentario
 
 -- Buffers - tabulacao identar
@@ -48,3 +54,49 @@ set("t", "<Esc>", "<C-\\><C-n><C-w><C-w>", ns)
 set("n", "<Leader><Space>", ":let @/=''<CR>", ns)
 set("n", "<Leader>ff", ":Telescore find_files<CR>", ns)
 
+-- sair forcado
+inoremap <C-qq> <esc>:wq!<cr>               " salva e fecha forcado :: i 
+nnoremap <C-ss> :wq!<cr>                    " salva e fecha forçado :: n
+
+-- FUNCOES
+
+
+vim.cmd([[ 
+  function! AutoC()
+    call append(0, '#include <stdio.h>')
+    call append(1, '')
+    call append(2, 'int main( int argc , char **argv ){')
+    call append(3, "  printf(\"Hello, World!\\n\");")
+    call append(4, '  return 0;')
+    call append(5, '}')
+    call cursor(4, 17)
+  endfunction
+  autocmd BufNewFile *.c :call AutoC()
+]])
+
+-- SHORT KEY TO COMPILE
+vim.cmd([[
+function! Run()
+  :echo 'Compiling...'
+  :terminal make
+  :bwipeout
+endfunction
+
+nnoremap <C-t> :call Run()<CR>
+inoremap <C-t> :call Run()<CR>
+vnoremap <C-t> :call Run()<CR>
+
+]])
+
+vim.cmd([[
+	function! AutoCpp()
+	  call append(0, '#include <iostream>')
+	  call append(1, '')
+	  call append(2, 'int main( int argc , char **argv ){')
+	  call append(3, "  std::cout << \"Hello, World!\" << '\\n';")
+	  call append(4, '  return 0;')
+	  call append(5, '}')
+	  call cursor(4, 17)
+	endfunction	
+        autocmd BufNewFile *.cpp :call AutoCpp()
+]])
