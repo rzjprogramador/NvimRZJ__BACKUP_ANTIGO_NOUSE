@@ -44,10 +44,10 @@ vim.cmd([[
 -- vim.cmd([[ noremap <S-t> :vsplit term://bash<CR> ]]) -- vsplit Terminal  bash :: S-t
 vim.cmd([[ noremap <S-t> :vsplit term://zsh<CR> ]]) -- vsplit Terminal  Zsh :: S-t
 
-vim.cmd [[command! Term :botright split term://$SHELL]]
-vim.cmd [[
+vim.cmd([[command! Term :botright split term://$SHELL]])
+vim.cmd([[
   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
   autocmd TermOpen * startinsert
   autocmd BufLeave term://* stopinsert
-  ]]
+]])
 

@@ -150,3 +150,14 @@ set("v", "<Leader>cc", ":Commentary<CR>", ns)
 == PLUGINS EM STAND BY
 -- comentar comentarios : Configuracao: https://vimawesome.com/plugin/nerdcommenter-may-fear-less
   Plug 'preservim/nerdcommenter'
+
+
+TODO
+-- complete - control - espaço
+vim.cmd([[
+  inoremap <silent><expr> <C-Space> compe#complete()
+  inoremap <silent><expr> <C-e>     compe#close('<C-e>')
+]])
+
+-- Restarta arquivo criado fora
+nmap <Leader>rr :NERDTreeFocus<cr>R<c-w><c-p>

@@ -1,6 +1,5 @@
 local set = vim.api.nvim_set_keymap
 local ns = { noremap = true, silent = true }
-local cmd = vim.cmd
 
 -- Command : Restart reload propagar :: o conteudo restarta automatico o arquivo >> Shift rr
 set("n", ";", ":", { noremap = true })
@@ -34,5 +33,6 @@ vim.cmd([[
 
 -- copia para register do linux --se der c-c no codigo , fora dele pode dar c-v
 vim.cmd([[ vmap <C-c> "+y ]])
+
 
 
