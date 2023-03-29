@@ -100,3 +100,53 @@ vim.cmd([[
 	endfunction	
         autocmd BufNewFile *.cpp :call AutoCpp()
 ]])
+
+-- TODO - NAO SEI 
+vim.opt.shortmess:append { c = true }
+vim.opt.whichwrap:append {
+	['<'] = true,
+	['>'] = true,
+	[','] = true,
+	h = true,
+	l = true
+}
+
+dentro de cmd
+inoremap ;; <Esc> --sair de modo dando Esc com 2 ponto e virgula 
+
+backups com comentarios nao deixei comentario dentro do cmd em producao:
+inoremap <C-s> <esc>:w<cr>                 " salva :: i
+  nnoremap <C-s> :w<cr>                      " salva :: n
+
+  inoremap <C-q> <esc>:wq!<cr>               " salva e fecha forcado :: i 
+  nnoremap <C-q> :wq!<cr>                    " salva e fecha forçado :: n
+
+  inoremap <C-d> <esc>:q!<cr>               " fecha forcado arquivo sem salvar :: i 
+  nnoremap <C-d> :q!<cr>                    " fecha forçado arquivo sem salvar :: n
+    
+  inoremap <C-k> <esc>:exit<cr>               " fecha dando exit no foco :: terminais
+  nnoremap <C-k> :exit<cr>
+
+  ---
+ --  DESATIVAR SETAS --Exceto em Insert_Mode
+ vim.cmd([[
+  noremap <Up> <NOP>
+  noremap <Down> <NOP>
+  noremap <Left> <NOP>
+  noremap <Right> <NOP>
+  noremap <S>k <NOP>
+
+  tnoremap ;; <C-\><C-n> " alguma config com ;;
+ ]])
+
+-- COMENTARIO -- BY CARNEIRO
+-- evita repeticao começo de comentario em lua
+vim.cmd([[ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions -=o ]])
+
+-- Commentary
+set("n", "<Leader>cc", ":Commentary<CR>", ns)
+set("v", "<Leader>cc", ":Commentary<CR>", ns)
+
+== PLUGINS EM STAND BY
+-- comentar comentarios : Configuracao: https://vimawesome.com/plugin/nerdcommenter-may-fear-less
+  Plug 'preservim/nerdcommenter'
