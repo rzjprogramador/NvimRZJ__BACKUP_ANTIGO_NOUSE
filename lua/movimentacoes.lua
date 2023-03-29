@@ -13,10 +13,3 @@ set("n", "<Leader>v", ":<C-u>vsplit<CR>", ns)
 -- Moving
 set("n", "j", "gj", ns)
 set("n", "k", "gk", ns)
-
-
--- " Use alt + hjkl to resize windows -- by hundcod
--- nnoremap <M-j>    :resize -2<CR>
--- nnoremap <M-k>    :resize +2<CR>
--- nnoremap <M-h>    :vertical resize -2<CR>
--- nnoremap <M-l>    :vertical resize +2<CR>
