@@ -8,7 +8,7 @@ PARA MAPS_PLUGS:
 -- ]]
 
 
--- explorer NerdTree  >>  S-e -- Shift-E 
+-- explorer NerdTree  >>  S-e -- Shift-E
 -- set("n", "<S-e>", ":NERDTreeToggle<CR>", ns)
 -- set("i", "<S-e>", ":NERDTreeToggle<CR>", ns)
 -- set("n", "<S-E>", ":NERDTreeToggle<CR>R", ns)
@@ -19,7 +19,7 @@ vim.cmd([[ inoremap <c-e> <Esc>:NvimTreeToggle<CR>l ]])
 vim.cmd([[ vnoremap <c-e> <Esc>:NvimTreeToggle<CR> ]])
 
 -- Nvim Tree -- TODO VE RO QUE É NvimTreeToggle :: JA REMAPEEI COM TERRO C-N
--- set("n", "<C-n>", ":NvimTreeToggle<CR>", ns) 
+-- set("n", "<C-n>", ":NvimTreeToggle<CR>", ns)
 -- set("n", "<Leader>n", ":NvimTreeFindFile<CR>", ns)
 
 -- ARRUMAR
@@ -27,8 +27,8 @@ vim.cmd([[ vnoremap <c-e> <Esc>:NvimTreeToggle<CR> ]])
 -- MAPS VIM
 -- seleciona tudo >> C-a
 vim.cmd([[ map <C-a> <esc>ggVG<esc> ]]) -- TODO
--- vim.cmd([[ inoremap <C-a> ggVG ]]) 
--- vim.cmd([[ nnoremap <C-a> ggVG ]]) 
+-- vim.cmd([[ inoremap <C-a> ggVG ]])
+-- vim.cmd([[ nnoremap <C-a> ggVG ]])
 
 -- Comentario
 
@@ -55,13 +55,13 @@ set("n", "<Leader><Space>", ":let @/=''<CR>", ns)
 set("n", "<Leader>ff", ":Telescore find_files<CR>", ns)
 
 -- sair forcado
-inoremap <C-qq> <esc>:wq!<cr>               " salva e fecha forcado :: i 
+inoremap <C-qq> <esc>:wq!<cr>               " salva e fecha forcado :: i
 nnoremap <C-ss> :wq!<cr>                    " salva e fecha forçado :: n
 
 -- FUNCOES
 
 
-vim.cmd([[ 
+vim.cmd([[
   function! AutoC()
     call append(0, '#include <stdio.h>')
     call append(1, '')
@@ -97,11 +97,11 @@ vim.cmd([[
 	  call append(4, '  return 0;')
 	  call append(5, '}')
 	  call cursor(4, 17)
-	endfunction	
+	endfunction
         autocmd BufNewFile *.cpp :call AutoCpp()
 ]])
 
--- TODO - NAO SEI 
+-- TODO - NAO SEI
 vim.opt.shortmess:append { c = true }
 vim.opt.whichwrap:append {
 	['<'] = true,
@@ -112,20 +112,21 @@ vim.opt.whichwrap:append {
 }
 
 dentro de cmd
-inoremap ;; <Esc> --sair de modo dando Esc com 2 ponto e virgula 
+inoremap ;; <Esc> --sair de modo dando Esc com 2 ponto e virgula
 
 backups com comentarios nao deixei comentario dentro do cmd em producao:
 inoremap <C-s> <esc>:w<cr>                 " salva :: i
   nnoremap <C-s> :w<cr>                      " salva :: n
 
-  inoremap <C-q> <esc>:wq!<cr>               " salva e fecha forcado :: i 
+  inoremap <C-q> <esc>:wq!<cr>               " salva e fecha forcado :: i
   nnoremap <C-q> :wq!<cr>                    " salva e fecha forçado :: n
 
-  inoremap <C-d> <esc>:q!<cr>               " fecha forcado arquivo sem salvar :: i 
+  inoremap <C-d> <esc>:q!<cr>               " fecha forcado arquivo sem salvar :: i
   nnoremap <C-d> :q!<cr>                    " fecha forçado arquivo sem salvar :: n
-    
+
   inoremap <C-k> <esc>:exit<cr>               " fecha dando exit no foco :: terminais
   nnoremap <C-k> :exit<cr>
+
 
   ---
  --  DESATIVAR SETAS --Exceto em Insert_Mode

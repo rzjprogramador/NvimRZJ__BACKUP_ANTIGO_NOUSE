@@ -3,7 +3,7 @@
 -----------------------------------------------------------
 
 -- by carneiro
-vim.cmd([[ 
+vim.cmd([[
   autocmd FileType css setl iskeyword+=-
   autocmd FileType scss setl iskeyword+=@-@
 ]])
@@ -21,15 +21,18 @@ vim.cmd([[
 
   inoremap <C-d> <esc>:q!<cr>
   nnoremap <C-d> :q!<cr>
-    
-  inoremap <C-k> <esc>:exit<cr>
-  nnoremap <C-k> :exit<cr>
 
+]])
+
+-- Deleta linha e entra em insercao
+vim.cmd([[
+  inoremap <C-k> <esc>dd<esc>i
+  nnoremap <C-k> dd<esc>i
 ]])
 
 vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
 
--- EASY CAPS :: Transformar selecionado em Upper e Lower case >> Shift + u 
+-- EASY CAPS :: Transformar selecionado em Upper e Lower case >> Shift + u
 vim.cmd([[
   inoremap <c-u> <ESC>viwUi
   nnoremap <c-u> viwU<Esc>

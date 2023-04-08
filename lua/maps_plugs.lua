@@ -7,24 +7,22 @@ set("n", "<Leader>r", ":luafile %<CR>", ns)
 
 -- Telescope
 -- abre navegador arquivos
-set("n", "<S-a>", ":Telescope find_files<CR>", ns) 
-set("n", "<S><S>", ":Telescope find_files<CR>", ns) 
-set("i", "<S-a>", "<Esc>:Telescope find_files<CR>", ns)
+set("n", "<C-p>", ":Telescope find_files<CR>", ns) 
+set("n", "<C>C>", ":Telescope find_files<CR>", ns) 
+set("i", "<C-p>", "<Esc>:Telescope find_files<CR>", ns)
 -- abre buffers abertos
-set("n", "<S-p>", ":Telescope buffers<CR>", ns)
-set("i", "<S-p>", "<Esc>:Telescope buffers<CR>", ns) 
+set("n", "<C-p>", ":Telescope buffers<CR>", ns)
+set("i", "<C-p>", "<Esc>:Telescope buffers<CR>", ns) 
 
 -----------------------------------------------------------
 --  Explorer >> S-e -- Shift-E
 -----------------------------------------------------------
 -- explorer NerdTree  >>  S-e -- Shift-E -- byCarneiro 
-set("n", "<S-e>", ":NERDTreeToggle<CR>", ns)
-set("i", "<S-e>", ":NERDTreeToggle<CR>", ns)
-set("n", "<S-E>", ":NERDTreeToggle<CR>R", ns)
+set("n", "<C-b>", ":NERDTreeToggle<CR>", ns)
+set("i", "<C-b>", ":NERDTreeToggle<CR>", ns)
+set("n", "<C-B>", ":NERDTreeToggle<CR>R", ns)
 
 -- Commentary -- Comentario :: TODO
-set("n", "<Leader>", ":Commentary<CR>", ns)
-set("v", "<Leader>cc", ":Commentary<CR>", ns)
 
 -- Pesquisa - Ctrol-F --escreva a pesquisa na CLI
 vim.cmd([[

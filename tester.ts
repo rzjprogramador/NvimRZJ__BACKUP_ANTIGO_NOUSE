@@ -5,6 +5,8 @@ type Props = {
   numero: number
 }
 
+foo
+
 const obj1: Props = {
   texto: "Rei",
   numero: 45,

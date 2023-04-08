@@ -57,6 +57,9 @@ vim.call('plug#begin', '~/.config/nvim/plugged') -- aponta pasta que vai auto cl
     Plug 'hrsh7th/vim-vsnip'
     Plug 'hrsh7th/vim-vsnip-integ'
 
+    -- comentario nvim - comment plugin
+    Plug 'terrortylor/nvim-comment'
+
 
 vim.call('plug#end')
 
