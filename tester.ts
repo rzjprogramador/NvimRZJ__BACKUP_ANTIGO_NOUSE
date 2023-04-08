@@ -1,11 +1,10 @@
-
+oooo
 
 type Props = {
   texto: string
   numero: number
 }
 
-foo
 
 const obj1: Props = {
   texto: "Rei",

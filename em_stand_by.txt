@@ -24,12 +24,6 @@ vim.cmd([[ vnoremap <c-e> <Esc>:NvimTreeToggle<CR> ]])
 
 -- ARRUMAR
 
--- MAPS VIM
--- seleciona tudo >> C-a
-vim.cmd([[ map <C-a> <esc>ggVG<esc> ]]) -- TODO
--- vim.cmd([[ inoremap <C-a> ggVG ]])
--- vim.cmd([[ nnoremap <C-a> ggVG ]])
-
 -- Comentario
 
 -- Buffers - tabulacao identar
@@ -126,6 +120,11 @@ inoremap <C-s> <esc>:w<cr>                 " salva :: i
 
   inoremap <C-k> <esc>:exit<cr>               " fecha dando exit no foco :: terminais
   nnoremap <C-k> :exit<cr>
+
+-- Pesquisa - Ctrol-ff --escreva a pesquisa na CLI com grep = aprender
+vim.cmd([[
+  nnoremap <C-ff> :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ") })<CR>
+]])
 
 
   ---
