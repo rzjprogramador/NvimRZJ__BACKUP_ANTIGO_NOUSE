@@ -26,11 +26,7 @@ vim.cmd([[ vnoremap <c-e> <Esc>:NvimTreeToggle<CR> ]])
 
 -- Comentario
 
--- Buffers - tabulacao identar
-set("n", "<Tab>", ":BufferLineCycleNext<CR>", ns)
-set("n", "<S-Tab>", ":BufferLineCyclePrev<CR>", ns)
-set("n", "<C-d>", ":bd<CR>", ns)
-set("n", "<C-t>", ":tabnew <CR>", ns)
+
 
 
 -- Edits -- Fechar selecionados com delimitadores

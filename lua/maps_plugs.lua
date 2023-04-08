@@ -25,5 +25,10 @@ set("n", "<C-B>", ":NERDTreeToggle<CR>R", ns)
 -- copia para register do linux --se der c-c no codigo , fora dele pode dar c-v
 vim.cmd([[ vmap <C-c> "+y ]])
 
+-- Buffers - tabulacao identar
+set("n", "<C-]>", ":BufferLineCycleNext<CR>", ns)
+set("n", "<C-[>", ":BufferLineCyclePrev<CR>", ns)
+set("n", "<C-d>", ":bd<CR>", ns)
+set("n", "<C>", ":tabnew <CR>", ns)
 
 

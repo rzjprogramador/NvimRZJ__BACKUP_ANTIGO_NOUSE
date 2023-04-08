@@ -1,4 +1,7 @@
-oooo
+coooo
+ddd
+ffff
+kkk
 
 type Props = {
   texto: string

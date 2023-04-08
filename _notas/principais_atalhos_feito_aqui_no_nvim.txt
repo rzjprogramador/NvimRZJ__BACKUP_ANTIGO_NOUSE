@@ -1,0 +1,7 @@
+leader: "barra '\'",
+
+---
+
+comentario: "leader ;;",
+explorador_arquivos: "C-e",
+seleciona_tudo: "C-a",

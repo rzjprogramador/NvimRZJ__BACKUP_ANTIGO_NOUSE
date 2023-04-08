@@ -1,4 +1,5 @@
 require 'plugins'
+require 'configs_plug/comment_config/comment_config'
 require 'maps_vim'
 require 'maps_plugs'
 require 'sets_vim'

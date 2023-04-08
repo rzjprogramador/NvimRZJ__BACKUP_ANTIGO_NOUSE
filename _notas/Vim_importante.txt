@@ -1,0 +1,1 @@
+leader: por default no vim o lider é a barra '\', até que vc mude.
