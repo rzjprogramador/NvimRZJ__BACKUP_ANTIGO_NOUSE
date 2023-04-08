@@ -139,13 +139,6 @@ vim.cmd([[
 -- evita repeticao começo de comentario em lua
 vim.cmd([[ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions -=o ]])
 
--- Commentary
-set("n", "<Leader>cc", ":Commentary<CR>", ns)
-set("v", "<Leader>cc", ":Commentary<CR>", ns)
-
-== PLUGINS EM STAND BY
--- comentar comentarios : Configuracao: https://vimawesome.com/plugin/nerdcommenter-may-fear-less
-  Plug 'preservim/nerdcommenter'
 
 
 TODO

@@ -3,3 +3,5 @@ require('nvim_comment').setup({
   operator_mapping = "<leader>;",
   comment_empty = false
 })
+
+-- configuracao plugin de comentario
