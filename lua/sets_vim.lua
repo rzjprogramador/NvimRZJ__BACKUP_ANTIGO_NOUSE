@@ -1,9 +1,9 @@
 
 -----------------------------------------------------------
---  Mapleader key leader Teclalider :: definida como :: Shift
+--  Mapleader key leader Teclalider :: padrao é o barra \,
 -----------------------------------------------------------
-vim.g.mapleader = '<S>'
-options = { noremap = true }
+-- vim.g.mapleader = '<C>'
+-- options = { noremap = true }
 
 -----------------------------------------------------------
 --  Design :: theme

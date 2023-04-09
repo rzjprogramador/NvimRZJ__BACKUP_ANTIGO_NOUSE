@@ -1,5 +1,10 @@
 PARA MAPS_PLUGS:
 
+-- Command : Restart reload propagar :: o conteudo restarta automatico o arquivo >> Shift rr
+-- set("n", ";", ":", { noremap = true })
+-- set("n", "<Leader>r", ":luafile %<CR>", ns)
+
+
 -- Complete with Enter Key coc sugest
 -- cmd[[
 --   inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"

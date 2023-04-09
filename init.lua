@@ -1,9 +1,8 @@
 require 'plugins'
+require 'sets_vim'
 require 'configs_plug/comment_config/comment_config'
-require 'configs_plug/alls/alls'
 require 'maps_vim'
 require 'maps_plugs'
-require 'sets_vim'
 require 'movimentacoes'
 
 -- ao reiniciar nvim volta mesmo lugar que parou o cursor
