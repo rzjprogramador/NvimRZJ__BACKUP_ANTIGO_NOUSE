@@ -7,7 +7,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged') -- aponta pasta que vai auto cl
     Plug 'L3MON4D3/LuaSnip'
 
     -- Explorer, deletar, modificar arquivos
-    Plug 'scrooloose/nerdtree'  
+    Plug 'scrooloose/nerdtree'
 
     -- Design Theme temas
     Plug 'ap/vim-css-color'
@@ -23,7 +23,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged') -- aponta pasta que vai auto cl
     -- Verificacao de sintaxe
     Plug 'sheerun/vim-polyglot'
 
-    -- Fecha pares delimitadores          
+    -- Fecha pares delimitadores
     Plug 'jiangmiao/auto-pairs'
 
     -- Frontend :: Styled components React
@@ -33,7 +33,7 @@ vim.call('plug#begin', '~/.config/nvim/plugged') -- aponta pasta que vai auto cl
     Plug 'fatih/vim-go' -- , { 'do': ':GoUpdateBinaries' }
 
     -- Servidor de Linguagem :: LSP :: Linter, AutoComplete
-    Plug 'neovim/nvim-lspconfig'    
+    Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
 
     -- Versionamento :: integracoes com Github
@@ -59,6 +59,9 @@ vim.call('plug#begin', '~/.config/nvim/plugged') -- aponta pasta que vai auto cl
 
     -- comentario nvim - comment plugin
     Plug 'terrortylor/nvim-comment'
+
+    -- vim-move movimentar_linhas
+    Plug 'matze/vim-move'
 
 
 vim.call('plug#end')

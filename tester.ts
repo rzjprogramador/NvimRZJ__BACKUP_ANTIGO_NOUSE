@@ -1,7 +1,7 @@
-coooo
-ddd
-ffff
-kkk
+// coooo
+// ddd
+// ffff
+// kkk
 
 type Props = {
   texto: string
