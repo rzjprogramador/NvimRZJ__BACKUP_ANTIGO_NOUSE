@@ -1,3 +1,6 @@
+local set = vim.api.nvim_set_keymap
+local ns = { noremap = true, silent = true }
+
 -----------------------------------------------------------
 --  Original Command in vimscript
 -----------------------------------------------------------
@@ -46,10 +49,22 @@ vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
 
 -- EASY CAPS :: Transformar selecionado em Upper e Lower case >> Shift + u
 vim.cmd([[
-  inoremap <c-u> <ESC>viwUi
-  nnoremap <c-u> viwU<Esc>
+  inoremap <S-u> <ESC>viwUi
+  nnoremap <S-u> viwU<Esc>
 ]])
 
 -- seleciona tudo >> e fica no buffer a copia
 vim.cmd([[ inoremap <C-a> <esc>ggVG ]])
 vim.cmd([[ nnoremap <C-a> ggVG ]])
+
+
+-- Window - move janelas
+set("n", "<S-Up>", ":resize -2<CR>", ns) -- sobe_painel_baixo
+set("n", "<S-Down>", ":resize +2<CR>", ns) -- abaixa_painel_baixo
+set("n", "<S-Left>", ":vertical resize +2<CR>", ns) -- dimensiona_painel_direita
+set("n", "<S-Right>", ":vertical resize -2<CR>", ns) -- dimensiona_painel_esquerda
+
+-- Moving
+set("n", "j", "gj", ns)
+set("n", "k", "gk", ns)
+

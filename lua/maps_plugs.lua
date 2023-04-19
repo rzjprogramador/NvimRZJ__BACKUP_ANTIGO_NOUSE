@@ -13,17 +13,11 @@ set("i", "<C-p>", "<Esc>:Telescope buffers<CR>", ns)
 --  Explorer >> S-e -- Shift-E
 -----------------------------------------------------------
 -- explorer NerdTree  >>  S-e -- Shift-E -- byCarneiro
-set("n", "<C-b>", ":NERDTreeToggle<CR>", ns)
-set("i", "<C-b>", ":NERDTreeToggle<CR>", ns)
-set("n", "<C-B>", ":NERDTreeToggle<CR>R", ns)
+set("n", "<F13>", ":NERDTreeToggle<CR> chmod a+x %<CR>", ns)
+set("i", "<F13>", ":NERDTreeToggle<CR> chmod a+x %<CR>", ns)
+set("n", "<C-F13>", ":NERDTreeToggle<CR>R", ns)
 
 -- copia para register do linux --se der c-c no codigo , fora dele pode dar c-v
 vim.cmd([[ vmap <C-c> "+y ]])
-
--- Buffers - tabulacao identar
-set("n", "<C-]>", ":BufferLineCycleNext<CR>", ns)
-set("n", "<C-[>", ":BufferLineCyclePrev<CR>", ns)
-set("n", "<C-d>", ":bd<CR>", ns)
-set("n", "<C>", ":tabnew <CR>", ns)
 
 
