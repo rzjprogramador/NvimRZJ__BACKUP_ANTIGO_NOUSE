@@ -1,3 +1,12 @@
 clone_origem: https://github.com/HunnTeRUS/my-nvim-configuration
 origem: HunnTeRUS
 dateStart: Abril/2023
+
+Configuracoes:
+  ao_mudar_vim: ```
+  No arquivo bash extensao do .bashrc no caso em bash_person >>>
+  # MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
+export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
+export MYVIMRC='~/.config/nvim/init.vim'
+# apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
+```
