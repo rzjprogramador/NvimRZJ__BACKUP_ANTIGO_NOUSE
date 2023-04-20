@@ -1,2 +1,0 @@
-master
-Cada branch um nvim
