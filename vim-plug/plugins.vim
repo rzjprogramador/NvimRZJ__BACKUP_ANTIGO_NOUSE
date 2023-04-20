@@ -30,6 +30,9 @@ endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
 
+    " Theme Dracula
+    Plug 'dracula/vim'
+
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
 
@@ -46,7 +49,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
     " lsp
-    Plug 'neovim/nvim-lspconfig'    
+    Plug 'neovim/nvim-lspconfig'
     Plug 'hrsh7th/nvim-compe'
 
     "Airline vim

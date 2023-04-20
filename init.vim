@@ -2,6 +2,10 @@ source ~/.config/nvim/settings.vim
 source ~/.config/nvim/keys/mappings.vim
 source ~/.config/nvim/vim-plug/plugins.vim
 
+" NOVAS CONFIGURACOES
+luafile ~/.config/nvim/aux/settings.lua
+
+
 luafile ~/.config/nvim/lua/plugins/compe-config.lua
 source ~/.config/nvim/plug-config/lsp-config.vim
 source ~/.config/nvim/plug-config/telescope.vim

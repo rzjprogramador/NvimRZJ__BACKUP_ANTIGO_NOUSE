@@ -1,7 +1,8 @@
-" leader esta em uso o padrao \ barra invertida
-"let mapleader = "," " definir aqui se for modificar
 
-" Use alt + hjkl to resize windows
+let mapleader = ","
+"--Leader esta em uso o padrao \ barra invertida :: obs: da conflito com barraInvertida comenatrio escolher outra entao preferencia Alt
+
+" Redimensionar_janelas :: Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
