@@ -1,0 +1,3 @@
+clone_origem: https://github.com/HunnTeRUS/my-nvim-configuration
+origem: HunnTeRUS
+dateStart: Abril/2023
