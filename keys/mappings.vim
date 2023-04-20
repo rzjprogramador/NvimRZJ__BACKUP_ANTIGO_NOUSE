@@ -8,7 +8,7 @@ nnoremap <M-l>    :vertical resize +2<CR>
 inoremap <c-u> <ESC>viwUi
 nnoremap <c-u> viwU<Esc>
 
-" Save and exit easier way 
+" Save and exit easier way
 inoremap <C-s> <esc>:w<cr>                 " save files
 nnoremap <C-s> :w<cr>
 inoremap <C-d> <esc>:wq!<cr>               " save and exit
@@ -29,8 +29,8 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Open nerdTree with keyshortcut
-let mapleader = ","
-nmap <leader>ne :NERDTree<cr>
+"let mapleader = ","
+nmap <C-m> :NERDTree<cr>
 
 " TABS
 noremap <Tab> :tabnext<CR>
@@ -45,13 +45,14 @@ noremap <Left> <NOP>
 noremap <Right> <NOP>
 noremap <S>k <NOP>
 
+" mudar modo para normal
 tnoremap ;; <C-\><C-n>
 
 " Opens a new terminal in vertical split
 noremap <Leader>t :vsplit term://zsh<CR>
 
 " Comment lines
-noremap <Leader>cc 
+noremap <Leader>cc
 
 "Search for all ocourrences of the phrase that you write
 nnoremap <C-f> :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ") })<CR>
@@ -89,3 +90,5 @@ inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 nmap <Leader>rr :NERDTreeFocus<cr>R<c-w><c-p>
+
+nmap <C-e> :NERDTreeToggle<cr>
