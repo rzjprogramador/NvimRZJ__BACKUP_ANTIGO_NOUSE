@@ -1,3 +1,6 @@
+" leader esta em uso o padrao \ barra invertida
+"let mapleader = "," " definir aqui se for modificar
+
 " Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
 nnoremap <M-k>    :resize +2<CR>
@@ -29,7 +32,6 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
 " Open nerdTree with keyshortcut
-"let mapleader = ","
 nmap <C-m> :NERDTree<cr>
 
 " TABS
@@ -91,4 +93,4 @@ inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 
 nmap <Leader>rr :NERDTreeFocus<cr>R<c-w><c-p>
 
-nmap <C-e> :NERDTreeToggle<cr>
+nmap <Leader>e :NERDTreeToggle<cr>
