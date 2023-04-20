@@ -1,6 +1,8 @@
-
-let mapleader = ","
-"--Leader esta em uso o padrao \ barra invertida :: obs: da conflito com barraInvertida comenatrio escolher outra entao preferencia Alt
+" LEADER
+"let mapleader = ","
+" nada configurado o padrao é barraInvertida
+set timeoutlen=500
+" tempo para usar leader - assim da tempo de nao dar conflito com leader
 
 " Redimensionar_janelas :: Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>

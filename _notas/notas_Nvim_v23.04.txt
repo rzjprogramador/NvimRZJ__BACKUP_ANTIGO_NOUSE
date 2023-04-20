@@ -17,3 +17,13 @@ ignorar_versionamento_plugins_instalados: add na raiz .gitignore defina para ign
 autoload/plugged
 
 ```
+
+"LEADER
+"let mapleader = ","
+" nada configurado o padrao é barraInvertida
+set timeoutlen=500
+" tempo para usar leader - assim da tempo de nao dar conflito com leader
+
+"--Leader esta em uso o padrao \ barra invertida :: obs: da conflito com barraInvertida ao menos que coloqeu o tempo rapido da leader
+
+---

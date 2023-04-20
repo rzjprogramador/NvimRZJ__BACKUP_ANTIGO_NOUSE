@@ -1,120 +1,23 @@
 -- == CONFIGS IN LUA ==========================
 
--- DESIGNS
+-- DESIGNS : Vou deixar aqui no lua nao ta achando o colroscheme no .vim
 vim.cmd([[ set background=dark ]])
 --  diga ao vim como é a cor de fundo : tell vim what the background color looks like
 
 vim.cmd([[ colorscheme dracula ]])
 -- setar cores do tema : theme settings color
 
--- TERMINAL
-vim.cmd([[ noremap <C-t> :vsplit term://bash<CR> ]])
--- escolher bash do vsplit terminal : mudar entre [ bash || zsh]
 
-vim.cmd([[ syntax enable  ]])
--- Habilitar syntax highlighing
-
-vim.cmd([[ set nowrap ]])
--- Exibir linhas longas como apenas uma linha : Display long lines as just one line
-
-vim.cmd([[ set encoding=utf-8  ]])
--- A codificação exibida : The encoding displayed
-
-vim.cmd([[ set pumheight=10 ]])
--- Makes popup menu smaller : tornar menu popup menor
-
-vim.cmd([[ set fileencoding=utf-8  ]])
--- A codificação gravada no arquivo : The encoding written to file :
-
-vim.cmd([[ set cmdheight=1 ]])
--- Mais espaço para exibição de mensagens : More space for displaying messages
-
-vim.cmd([[ set iskeyword+=- ]])
--- tratar palavras separadas por travessão como um objeto de texto de palavra : treat dash separated words as a word text object
-
-vim.cmd([[ set mouse=a ]])
--- Habilita mouse : Enable your mouse
-
-vim.cmd([[ set splitbelow ]])
--- As divisões horizontais estarão automaticamente abaixo : Horizontal splits will automatically be below
-
-vim.cmd([[ set splitright  ]])
--- Vertical splits will automatically be to the right
-
-vim.cmd([[ set t_Co=256 ]])
--- Suporta 256 cores : Support 256 colors
-
-vim.cmd([[ set conceallevel=0 ]])
-
--- Para que eu possa ver `` em arquivos markdown : So that I can see `` in markdown files
-
-
--- IDENTACAO
-vim.cmd([[ set tabstop=4 ]])
--- Insert 2 spaces for a tab
-
-vim.cmd([[ set shiftwidth=2 ]])
--- Alterar o número de caracteres de espaço inseridos para recuo : Change the number of space characters inserted for indentation
-
-vim.cmd([[ set smarttab ]])
--- Torna a tabulação mais inteligente e perceberá que você tem 2 contra 4 : Makes tabbing smarter will realize you have 2 vs 4
-
-vim.cmd([[ set expandtab ]])
--- Converte tabulações em espaços  : Converts tabs to spaces
-
-vim.cmd([[ set smartindent ]])
--- Torna o recuo inteligente : Makes indenting smart
-
-vim.cmd([[ set autoindent ]])
--- Bom recuo automatico : Good auto indent
-
-vim.cmd([[ set laststatus=0 ]])
--- Sempre exibir a linha de status : Always display the status line
-
--- CURSOR
-vim.cmd([[ set guicursor= ]])
--- Nao defnir linha de cursor
-
-vim.cmd([[ set ruler ]])
--- Mostrar a posição do cursor o tempo todo: Show the cursor position all the time
-
-vim.cmd([[ set cursorline ]])
--- Definir linha do cursor : Set cursor line
-
-vim.cmd([[ hi CursorLine cterm=NONE ctermbg=8 ctermfg=NONE ]])
-
--- LINHAS
-vim.cmd([[ set number  ]])
--- mostrar numero das linhas : Show line numbers
-
-vim.cmd([[ set cursorline ]])
--- Ativar destaque da linha atual : Enable highlighting of the current line
-
-vim.cmd([[ set showtabline=2 ]])
--- Sempre mostrar guias : Always show tabs
-
-vim.cmd([[ set noshowmode ]])
--- definir modo de não apresentação : set no show mode
-
--- AREA TRANSFERENCIA NVIM >> LINUX
-vim.cmd([[ set clipboard=unnamedplus ]])
--- compartilhar de área de transferência entre o Vim e o Linux
-
--- vim.cmd([[ set clipboard+=unnamed ]])
--- definir área de transferência sem nome : set clipboard unnamed
-
--- =====================================================
---
 -- TODO
-vim.cmd([[ let extension = expand('%:e') ]])
-vim.cmd([[ let filenamev = expand('%:t') ]])
+-- vim.cmd([[ let extension = expand('%:e') ]])
+-- vim.cmd([[ let filenamev = expand('%:t') ]])
 
-vim.cmd([[command! Term :botright split term://$SHELL]])
-vim.cmd([[
-  autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
-  autocmd TermOpen * startinsert
-  autocmd BufLeave term://* stopinsert
-]])
+-- vim.cmd([[command! Term :botright split term://$SHELL]])
+-- vim.cmd([[
+--   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
+--   autocmd TermOpen * startinsert
+--   autocmd BufLeave term://* stopinsert
+-- ]])
 
 
 -- Desativados
