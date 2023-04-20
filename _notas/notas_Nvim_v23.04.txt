@@ -10,3 +10,10 @@ export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim r
 export MYVIMRC='~/.config/nvim/init.vim'
 # apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
 ```
+nvim_configurar: ao abrir a primeira vez
+instalar_plugins: ":PlugInstall"
+ignorar_versionamento_plugins_instalados: add na raiz .gitignore defina para ignorar:
+```
+autoload/plugged
+
+```
