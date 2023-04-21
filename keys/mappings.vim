@@ -1,8 +1,11 @@
 " LEADER
-"let mapleader = ","
-" nada configurado o padrao é barraInvertida
+let mapleader = ""
 set timeoutlen=500
 " tempo para usar leader - assim da tempo de nao dar conflito com leader
+
+noremap <leader>d dd<esc>
+"  nnoremap <leader>d :dd<esc>
+
 
 " Redimensionar_janelas :: Use alt + hjkl to resize windows
 nnoremap <M-j>    :resize -2<CR>
