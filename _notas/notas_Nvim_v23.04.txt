@@ -2,28 +2,3 @@ clone_origem: https://github.com/HunnTeRUS/my-nvim-configuration
 origem: HunnTeRUS
 dateStart: Abril/2023
 
-Configuracoes:
-  ao_mudar_vim: ```
-  No arquivo bash extensao do .bashrc no caso em bash_person >>>
-  # MUDAR LOCAL VIM_RC :: PARA PASTA ~/Personal_Vim :: AO INVES DO .VIMRC NA RAIZ
-export VIMINIT='source $MYVIMRC' # var que aponta o caminho de abertura do vim rc
-export MYVIMRC='~/.config/nvim/init.vim'
-# apontando o arquivo init - se for conforme a extensao em uso .vim ou .lua e depois propag.
-```
-nvim_configurar: ao abrir a primeira vez
-instalar_plugins: ":PlugInstall"
-ignorar_versionamento_plugins_instalados: add na raiz .gitignore defina para ignorar:
-```
-autoload/plugged
-
-```
-
-"LEADER
-"let mapleader = ","
-" nada configurado o padrao é barraInvertida
-set timeoutlen=500
-" tempo para usar leader - assim da tempo de nao dar conflito com leader
-
-"--Leader esta em uso o padrao \ barra invertida :: obs: da conflito com barraInvertida ao menos que coloqeu o tempo rapido da leader
-
----

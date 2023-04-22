@@ -1,9 +1,14 @@
 " LEADER
-let mapleader = ""
+let mapleader = "\M"
 set timeoutlen=500
 " tempo para usar leader - assim da tempo de nao dar conflito com leader
+" foo
+" foo
+" foo
+" foo
+" foo
 
-noremap <leader>d dd<esc>
+noremap <leader>d dd<esc>o<CR>
 "  nnoremap <leader>d :dd<esc>
 
 
