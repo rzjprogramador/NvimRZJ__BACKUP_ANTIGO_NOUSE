@@ -1,4 +1,10 @@
-vim.cmd([[ map q :q<CR> ]])
+-- para sair com confirmação --
+vim.cmd([[ map <C-q> :q<CR> ]])
+vim.cmd([[ nnoremap <C-q> :q<CR> ]])
+vim.cmd([[ inoremap <C-q> <Esc>:q<CR>l ]])
+vim.cmd([[ vnoremap <C-q> <Esc>:q<CR> ]])
+
+-- Para Salvar com 'Ctrl + S' nos modos: Normal, Inserção e Visual ---
 vim.cmd([[ nnoremap <C-s> :w<CR> ]])
 vim.cmd([[ inoremap <C-s> <Esc>:w<CR>l ]])
 vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
@@ -13,11 +19,11 @@ vim.cmd([[
 	  call append(4, '  return 0;')
 	  call append(5, '}')
 	  call cursor(4, 17)
-	endfunction	
+	endfunction
         autocmd BufNewFile *.cpp :call AutoCpp()
 ]])
 
-vim.cmd([[ 
+vim.cmd([[
   function! AutoC()
     call append(0, '#include <stdio.h>')
     call append(1, '')

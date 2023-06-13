@@ -19,6 +19,7 @@ vim.cmd([[ set guicursor= ]])
 vim.cmd([[ set cursorline ]])
 vim.cmd([[ syntax on ]])
 
+-- carregar automaticamente o packer e compilar - nao precisa ficar abrindo e fechando a novas instalacaoes.
 vim.cmd([[
   augroup packer_user_config
     autocmd!
