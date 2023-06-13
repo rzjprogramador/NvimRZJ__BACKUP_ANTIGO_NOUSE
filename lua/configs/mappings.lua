@@ -50,10 +50,12 @@ vnoremap <C-t> :call Run()<CR>
 
 ]])
 
-vim.cmd([[ nnoremap <C-n> :NvimTreeToggle<CR> ]])
-vim.cmd([[ inoremap <C-n> <Esc>:NvimTreeToggle<CR>l ]])
-vim.cmd([[ vnoremap <C-n> <Esc>:NvimTreeToggle<CR> ]])
+-- explorer
+vim.cmd([[ nnoremap <C-e> :NvimTreeToggle<CR> ]])
+vim.cmd([[ inoremap <C-e> <Esc>:NvimTreeToggle<CR>l ]])
+vim.cmd([[ vnoremap <C-e> <Esc>:NvimTreeToggle<CR> ]])
 
+-- terminal float
 vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])
 vim.cmd([[ inoremap <C-Space> <Esc>:FloatermNew<CR>l ]])
 vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
