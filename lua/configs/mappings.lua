@@ -22,9 +22,12 @@ vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])
 vim.cmd([[ inoremap <C-Space> <Esc>:FloatermNew<CR>l ]])
 vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
 
--- funcoes
+-- BASH - Auto preenche arquivos .sh que não existirem com a SheBang
 vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
 
+-- FUNCOES --
+-- Se não existir o arquivo C++ de extensão .cpp ele preenche da forma abaixo
+-- altere para sua(s) linguagens preferidas
 vim.cmd([[
 	function! AutoCpp()
 	  call append(0, '#include <iostream>')

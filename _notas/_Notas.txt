@@ -19,3 +19,6 @@ tutorial: como instalar packer nvim : https://terminalroot.com.br/2021/11/instal
 
 # Comandos line
   1. ver emojis: :ShowEmoji
+
+# Temas
+repo_temas_nvim: ['https://github.com/navarasu/onedark.nvim', ]
