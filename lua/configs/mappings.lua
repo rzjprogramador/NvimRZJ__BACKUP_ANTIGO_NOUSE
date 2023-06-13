@@ -12,7 +12,7 @@ vim.cmd([[ map <C-a> ggVG ]])
 
 -- MAPPINGS PLUGINS --
 
--- explorer
+-- explorer -> NvimTree
 vim.cmd([[ nnoremap <C-e> :NvimTreeToggle<CR> ]])
 vim.cmd([[ inoremap <C-e> <Esc>:NvimTreeToggle<CR>l ]])
 vim.cmd([[ vnoremap <C-e> <Esc>:NvimTreeToggle<CR> ]])

@@ -16,6 +16,9 @@ tutorial: como instalar packer nvim : https://terminalroot.com.br/2021/11/instal
   1. agora sim no comando line pode chamar e instalr :PackerInstall
   1. local que esatrao instalados os plugins/pacotes: ~/.local/share/nvim/site/pack/packer/start/
 
+# Links_Plugins
+  1. explorer : NvimTree (https://github.com/nvim-tree/nvim-tree.lua)
+   1. mapear -> explorer : NvimTree (https://github.com/nvim-tree/nvim-tree.lua/blob/master/doc/nvim-tree-lua.txt)
 
 # Comandos line
   1. ver emojis: :ShowEmoji
