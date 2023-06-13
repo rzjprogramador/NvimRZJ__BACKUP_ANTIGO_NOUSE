@@ -12,10 +12,11 @@ vim.cmd([[ map <C-a> ggVG ]])
 
 -- MAPPINGS PLUGINS --
 
--- explorer -> NvimTree
-vim.cmd([[ nnoremap <C-e> :NvimTreeToggle<CR> ]])
-vim.cmd([[ inoremap <C-e> <Esc>:NvimTreeToggle<CR>l ]])
-vim.cmd([[ vnoremap <C-e> <Esc>:NvimTreeToggle<CR> ]])
+-- explorer -> neo-tree
+vim.cmd([[ nnoremap <C-e> :NeoTreeFocusToggle<CR> ]])
+vim.cmd([[ inoremap <C-e> <Esc>:NeoTreeFocusToggle<CR>l ]])
+vim.cmd([[ vnoremap <C-e> <Esc>:NeoTreeFocusToggle<CR> ]])
+
 
 -- terminal float
 vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])

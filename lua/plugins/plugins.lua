@@ -27,12 +27,7 @@ return require('packer').startup(function()
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'kyazdani42/nvim-web-devicons'}
 
   use {'nvim-treesitter/nvim-treesitter'} --:TSUpdate
-  use {
-    'kyazdani42/nvim-tree.lua',
-    requires = {
-      'kyazdani42/nvim-web-devicons',
-    }
-  }
+
 --
   use 'matze/vim-move'
   use 'rcarriga/nvim-notify'
@@ -40,6 +35,16 @@ return require('packer').startup(function()
   use 'morhetz/gruvbox'
   use 'navarasu/onedark.nvim'
   use 'elvessousa/sobrio'
+
+  -- explorer neo-tree
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+      branch = "v2.x",
+      requires = {
+        "MunifTanjim/nui.nvim",
+      }
+    }
+
 end)
 
 
