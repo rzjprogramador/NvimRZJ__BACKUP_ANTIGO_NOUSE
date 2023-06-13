@@ -9,7 +9,22 @@ vim.cmd([[ nnoremap <C-s> :w<CR> ]])
 vim.cmd([[ inoremap <C-s> <Esc>:w<CR>l ]])
 vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
 vim.cmd([[ map <C-a> ggVG ]])
+
+-- MAPPINGS PLUGINS --
+
+-- explorer
+vim.cmd([[ nnoremap <C-e> :NvimTreeToggle<CR> ]])
+vim.cmd([[ inoremap <C-e> <Esc>:NvimTreeToggle<CR>l ]])
+vim.cmd([[ vnoremap <C-e> <Esc>:NvimTreeToggle<CR> ]])
+
+-- terminal float
+vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])
+vim.cmd([[ inoremap <C-Space> <Esc>:FloatermNew<CR>l ]])
+vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
+
+-- funcoes
 vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
+
 vim.cmd([[
 	function! AutoCpp()
 	  call append(0, '#include <iostream>')
@@ -50,12 +65,4 @@ vnoremap <C-t> :call Run()<CR>
 
 ]])
 
--- explorer
-vim.cmd([[ nnoremap <C-e> :NvimTreeToggle<CR> ]])
-vim.cmd([[ inoremap <C-e> <Esc>:NvimTreeToggle<CR>l ]])
-vim.cmd([[ vnoremap <C-e> <Esc>:NvimTreeToggle<CR> ]])
 
--- terminal float
-vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])
-vim.cmd([[ inoremap <C-Space> <Esc>:FloatermNew<CR>l ]])
-vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
