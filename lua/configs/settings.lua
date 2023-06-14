@@ -1,39 +1,108 @@
+-- SETTINGS --
+
+vim.cmd([[ syntax on ]])
+-- todo ???
+
+vim.cmd([[ syntax enable  ]])
+-- Habilitar syntax highlighing
+
 vim.cmd([[ let extension = expand('%:e') ]])
 vim.cmd([[ let filenamev = expand('%:t') ]])
+-- TODO ???
 
-vim.cmd([[ set encoding=utf8 ]])
-vim.cmd([[ set nu! ]])
-vim.cmd([[ set mouse=a ]])
-vim.cmd([[ set wildmenu ]])
-vim.cmd([[ set confirm ]])
-vim.cmd([[ set incsearch ]])
-vim.cmd([[ set title ]])
-vim.cmd([[ set t_Co=256 ]])
-vim.cmd([[ set shiftwidth=2 ]])
-vim.cmd([[ set softtabstop=2 ]])
-vim.cmd([[ set expandtab ]])
-vim.cmd([[ set shiftwidth=2 ]])
-vim.cmd([[ set softtabstop=2 ]])
-vim.cmd([[ set expandtab ]])
-vim.cmd([[ set guicursor= ]])
 vim.cmd([[ set cursorline ]])
-vim.cmd([[ syntax on ]])
+-- Ativar destaque da linha atual : Enable highlighting of the current line
 
--- carregar automaticamente o packer e compilar - nao precisa ficar abrindo e fechando a novas instalacaoes.
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
-  augroup end
-]])
+vim.cmd([[ set noswapfile ]])
+-- desabilita criação de arquivo  backup .swp
 
+vim.cmd([[ confirm ]])
+-- pede confirmações antes de ação
+
+vim.cmd([[ set title ]])
+-- mostra titulo ???
+
+-- DESIGNS --
+
+-- CURSOR --
+vim.cmd([[ set guicursor= ]])
+-- definir cursor como nada assume o I-Beam se tiver configurado no terminal.
+
+vim.cmd([[ set nowrap ]])
+-- Exibir linhas longas como apenas uma linha : Display long lines as just one line
+
+vim.cmd([[ set encoding=utf-8  ]])
+-- A codificação exibida : The encoding displayed
+
+vim.cmd([[ set pumheight=10 ]])
+-- Makes popup menu smaller : tornar menu popup menor
+
+vim.cmd([[ set fileencoding=utf-8  ]])
+-- A codificação gravada no arquivo : The encoding written to file :
+
+vim.cmd([[ set cmdheight=1 ]])
+-- Mais espaço para exibição de mensagens : More space for displaying messages
+
+vim.cmd([[ set iskeyword+=- ]])
+-- tratar palavras separadas por travessão como um objeto de texto de palavra : treat dash separated words as a word text object
+
+vim.cmd([[ set mouse=a ]])
+-- Habilita mouse : Enable your mouse
+
+vim.cmd([[ set splitbelow ]])
+-- As divisões horizontais estarão automaticamente abaixo : Horizontal splits will automatically be below
+
+vim.cmd([[ set splitright  ]])
+-- Vertical splits will automatically be to the right
+
+vim.cmd([[ set t_Co=256 ]])
+-- Suporta 256 cores : Support 256 colors
+
+vim.cmd([[ set conceallevel=0 ]])
+
+-- Para que eu possa ver  em arquivos markdown : So that I can see in markdown files
+
+-- IDENTACAO
+vim.cmd([[ set tabstop=4 ]])
+-- Insert 2 spaces for a tab
+
+vim.cmd([[ set shiftwidth=2 ]])
+-- Alterar o número de caracteres de espaço inseridos para recuo : Change the number of space characters inserted for indentation
+
+vim.cmd([[ set smarttab ]])
+-- Torna a tabulação mais inteligente e perceberá que você tem 2 contra 4 : Makes tabbing smarter will realize you have 2 vs 4
+
+vim.cmd([[ set expandtab ]])
+-- Converte tabulações em espaços  : Converts tabs to spaces
+
+vim.cmd([[ set smartindent ]])
+-- Torna o recuo inteligente : Makes indenting smart
+
+vim.cmd([[ set autoindent ]])
+-- Bom recuo automatico : Good auto indent
+
+vim.cmd([[ set laststatus=0 ]])
+-- Sempre exibir a linha de status : Always display the status line
+
+vim.cmd([[ set ruler ]])
+-- Mostrar a posição do cursor o tempo todo: Show the cursor position all the time
+
+-- LINHAS
+vim.cmd([[ set number  ]])
+-- mostrar numero das linhas : Show line numbers
+
+vim.cmd([[ set showtabline=1 ]])
+-- Sempre mostrar guias e a quantidade de tabs : Always show tabs
+
+-- AREA TRANSFERENCIA NVIM >> LINUX --
+vim.cmd([[ set clipboard=unnamedplus ]])
+-- compartilhar de área de transferência entre o Vim e o Linux
+
+-- DESIGN_COMPUTACIONAL --
 vim.cmd([[ set bg=dark ]])
 vim.cmd([[ set termguicolors ]])
 
 -- SET THEME --
 vim.cmd([[ colorscheme sobrio ]])
---vim.cmd([[ colorscheme peachpuff ]])
---vim.cmd([[ colorscheme gruvbox ]])
---require('onedark').load()
 
 

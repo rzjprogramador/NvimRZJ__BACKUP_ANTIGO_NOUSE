@@ -8,10 +8,19 @@ vim.cmd([[
   endif
 ]])
 
--- BASH - Auto preenche arquivos .sh que não existirem com a SheBang
+
+-- carregar automaticamente o packer e compilar - nao precisa ficar abrindo e fechando a novas instalacaoes. --
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins.lua source <afile> | PackerCompile
+  augroup end
+]])
+
+-- BASH - Auto preenche arquivos .sh que não existirem com a SheBang --
 vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
 
--- Se não existir o arquivo C++ de extensão .cpp ele preenche da forma abaixo
+-- Se não existir o arquivo C++ de extensão .cpp ele preenche da forma abaixo --
 -- altere para sua(s) linguagens preferidas --
 vim.cmd([[
 	function! AutoCpp()
