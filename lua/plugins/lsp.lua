@@ -98,11 +98,11 @@ if extension == "cpp" or extension == "hpp" or extension == "cc" then
   --print("Olá, amigo, eu estou aqui!")
   require'lspconfig'.clangd.setup{
     filetypes = { "cpp", "hpp", "h" },
-    dirname = {"/home/marcos/.config/clangd"},
+    dirname = {"/home/rzj/.config/clangd"},
     cmd = {
       "clangd", "--background-index", "--pch-storage=memory",
       "--clang-tidy", "--suggest-missing-includes",
-      "--compile-commands-dir=/home/marcos/.config/clangd"
+      "--compile-commands-dir=/home/rzj/.config/clangd"
     },
     init_option = {
       fallbackFlags = {
@@ -115,11 +115,11 @@ end
 if extension == "c" or extension == "h" then
   require'lspconfig'.clangd.setup{
     filetypes = { "c", "h" },
-    dirname = {"/home/marcos/.config/Clangd"},
+    dirname = {"/home/rzj/.config/Clangd"},
     cmd = {
       "clangd", "--background-index", "--pch-storage=memory",
       "--clang-tidy", "--suggest-missing-includes",
-      "--compile-commands-dir=/home/marcos/.config/Clangd"
+      "--compile-commands-dir=/home/rzj/.config/Clangd"
     },
   }
 end

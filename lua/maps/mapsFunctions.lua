@@ -1,34 +1,18 @@
--- para sair com confirmação --
-vim.cmd([[ map <C-q> :q<CR> ]])
-vim.cmd([[ nnoremap <C-q> :q<CR> ]])
-vim.cmd([[ inoremap <C-q> <Esc>:q<CR>l ]])
-vim.cmd([[ vnoremap <C-q> <Esc>:q<CR> ]])
+-- Maps FUNCTIONS  --
 
--- Para Salvar com 'Ctrl + S' nos modos: Normal, Inserção e Visual ---
-vim.cmd([[ nnoremap <C-s> :w<CR> ]])
-vim.cmd([[ inoremap <C-s> <Esc>:w<CR>l ]])
-vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
-vim.cmd([[ map <C-a> ggVG ]])
-
--- MAPPINGS PLUGINS --
-
--- explorer -> neo-tree
-vim.cmd([[ nnoremap <C-e> :NeoTreeFocusToggle<CR> ]])
-vim.cmd([[ inoremap <C-e> <Esc>:NeoTreeFocusToggle<CR>l ]])
-vim.cmd([[ vnoremap <C-e> <Esc>:NeoTreeFocusToggle<CR> ]])
-
-
--- terminal float
-vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])
-vim.cmd([[ inoremap <C-Space> <Esc>:FloatermNew<CR>l ]])
-vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
+-- INICIAL -- Cursor DeOndeParou --
+vim.cmd([[
+  hi! MatchParen cterm=NONE,bold gui=NONE,bold guibg=NONE guifg=#FFFF00
+  if has("autocmd")
+    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+  endif
+]])
 
 -- BASH - Auto preenche arquivos .sh que não existirem com a SheBang
 vim.cmd([[ autocmd BufNewFile *.sh :call append(0, '#!/usr/bin/env bash') ]])
 
--- FUNCOES --
 -- Se não existir o arquivo C++ de extensão .cpp ele preenche da forma abaixo
--- altere para sua(s) linguagens preferidas
+-- altere para sua(s) linguagens preferidas --
 vim.cmd([[
 	function! AutoCpp()
 	  call append(0, '#include <iostream>')
@@ -66,7 +50,6 @@ endfunction
 nnoremap <C-t> :call Run()<CR>
 inoremap <C-t> :call Run()<CR>
 vnoremap <C-t> :call Run()<CR>
-
 ]])
 
 

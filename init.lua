@@ -1,14 +1,10 @@
 require("plugins.plugins")
 require("configs.settings")
-require("configs.mappings")
+require("maps.mapsEdition")
+require("maps.mapsFunctions")
+require("maps.mapsPlugins")
+require("maps.mapsTerminal")
 -- require("plugins.utils")  -- TODO - esta dando erro
 require("plugins.complete")
 require("plugins.news")
-
-vim.cmd([[
-  hi! MatchParen cterm=NONE,bold gui=NONE,bold guibg=NONE guifg=#FFFF00
-  if has("autocmd")
-    au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
-  endif
-]])
 

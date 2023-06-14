@@ -30,9 +30,10 @@ vim.cmd([[
 vim.cmd([[ set bg=dark ]])
 vim.cmd([[ set termguicolors ]])
 
+-- SET THEME --
+vim.cmd([[ colorscheme sobrio ]])
 --vim.cmd([[ colorscheme peachpuff ]])
 --vim.cmd([[ colorscheme gruvbox ]])
 --require('onedark').load()
-vim.cmd([[ colorscheme sobrio ]])
 
 
