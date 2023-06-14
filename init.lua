@@ -1,6 +1,6 @@
 require("plugins.plugins")
 require("configs.settings")
-require("maps.mapsEdition")
+require("maps.mapsEditions")
 require("maps.mapsFunctions")
 require("maps.mapsPlugins")
 require("maps.mapsTerminal")
