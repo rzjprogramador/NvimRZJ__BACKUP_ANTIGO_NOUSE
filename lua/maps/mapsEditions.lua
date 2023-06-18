@@ -16,10 +16,6 @@ vim.cmd([[ map <A-a> ggVG ]])
 -- proximo buffer
 vim.cmd([[ nnoremap <Tab> :b#<CR> ]])
 
--- vim.cmd([[ noremap <S-Tab> :BufferLineCyclePrev<CR> ]])
--- vim.cmd([[ nnoremap <C-t> :tabnew<CR> ]])
--- vim.cmd([[ noremap <C-e> :tabclose<CR> ]])
-
 -- Redimensionar_janelas :: Use alt + hjkl to resize windows -- TODO
 -- vim.cmd([[ nnoremap <A-j>    :resize -2<CR> ]])
 -- vim.cmd([[ nnoremap <A-k>    :resize +2<CR> ]])
