@@ -4,3 +4,12 @@ vim.cmd([[ nnoremap <A-e> :NeoTreeFocusToggle<CR> ]])
 vim.cmd([[ inoremap <A-e> :NeoTreeFocusToggle<CR>l ]])
 vim.cmd([[ vnoremap <A-e> :NeoTreeFocusToggle<CR> ]])
 
+-- TESTAR SCRIPT D ETERMINAL DO CARNEIRO
+-- Terminal
+cmd [[command! Term :botright split term://$SHELL]]
+cmd [[
+  autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
+  autocmd TermOpen * startinsert
+  autocmd BufLeave term://* stopinsert
+]]
+
