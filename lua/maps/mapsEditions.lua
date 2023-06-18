@@ -16,6 +16,19 @@ vim.cmd([[ map <A-a> ggVG ]])
 -- proximo buffer
 vim.cmd([[ nnoremap <Tab> :b#<CR> ]])
 
+-- PROCURAR POR OCORRENCIAS
+vim.cmd([[
+  " Changes all ocourrences for the text that you have typed
+  nnoremap <C-r> :%s///g<Left><Left>
+  nnoremap <C-rc> :%s///gc<Left><Left><Left>
+
+  xnoremap <C-r> :s///g<Left><Left>
+  xnoremap <C-rc> :s///gc<Left><Left><Left>
+
+  vnoremap * y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+]])
+
 
 
 

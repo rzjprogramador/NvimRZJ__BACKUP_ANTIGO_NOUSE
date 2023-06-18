@@ -16,3 +16,7 @@ vim.cmd([[ vnoremap <A-f> :Telescope find_files<CR> ]])
 vim.cmd([[ nnoremap <A-b> :Telescope buffers<CR> ]])
 vim.cmd([[ inoremap <A-b> :Telescope buffers<CR> ]])
 vim.cmd([[ vnoremap <A-b> :Telescope buffers<CR> ]])
+
+-- Telescope - procurar com grep
+vim.cmd([[ nnoremap <C-k> :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ") })<CR>
+]])

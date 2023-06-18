@@ -1,0 +1,5 @@
+-- COMANDOS VIM e NVIM FUNCIONANDO PRO DEFAULT
+
+-- MOVIMENTAÇÃO
+-- Mover linha e selecionados : <A-k> Alt+k esta movendo linha e selecionados para cima
+-- Mover linha e selecionados : <A-j> Alt+j esta movendo linha e selecionados para baixo
