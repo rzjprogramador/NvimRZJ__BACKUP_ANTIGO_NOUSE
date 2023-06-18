@@ -16,9 +16,9 @@ vim.cmd([[ map <A-a> ggVG ]])
 -- proximo buffer
 vim.cmd([[ nnoremap <Tab> :b#<CR> ]])
 
--- PROCURAR POR OCORRENCIAS
+-- SUBSTITUIÇÃO TODAS OCORRENCIAS DIGITADAS
+-- para usar execute o atalho -> volte uma barra com a seta e digite A PROCURA -> após a proxima barra digite o que  vai substituir a procura encontrada
 vim.cmd([[
-  " Changes all ocourrences for the text that you have typed
   nnoremap <C-r> :%s///g<Left><Left>
   nnoremap <C-rc> :%s///gc<Left><Left><Left>
 
