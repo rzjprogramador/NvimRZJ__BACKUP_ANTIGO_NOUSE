@@ -49,16 +49,6 @@ vim.cmd([[
 ]])
 
 -- SHORT KEY TO COMPILE
-vim.cmd([[
-function! Run()
-  :echo 'Compiling...'
-  :terminal make
-  :bwipeout
-endfunction
 
-nnoremap <C-t> :call Run()<CR>
-inoremap <C-t> :call Run()<CR>
-vnoremap <C-t> :call Run()<CR>
-]])
 
 
