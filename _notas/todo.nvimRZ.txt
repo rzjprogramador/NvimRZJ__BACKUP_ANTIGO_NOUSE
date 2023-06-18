@@ -1,0 +1,6 @@
+// TODO: setar alt como leader:
+-- SET MAP LEADER
+vim.cmd([[
+  let mapleader = ","
+ ]])
+

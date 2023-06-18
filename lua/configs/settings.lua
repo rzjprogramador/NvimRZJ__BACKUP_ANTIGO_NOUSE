@@ -8,6 +8,9 @@ vim.cmd([[ syntax enable  ]])
 
 vim.cmd([[ let extension = expand('%:e') ]])
 vim.cmd([[ let filenamev = expand('%:t') ]])
+
+
+
 -- TODO ???
 
 vim.cmd([[ set cursorline ]])
