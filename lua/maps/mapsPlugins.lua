@@ -2,9 +2,9 @@
 
 -- explorer -> neo-tree
 
-vim.cmd([[ nnoremap <leader>e :NeoTreeFocusToggle<CR> ]])
-vim.cmd([[ inoremap <leader>e :NeoTreeFocusToggle<CR>l ]])
-vim.cmd([[ vnoremap <leader>e :NeoTreeFocusToggle<CR> ]])
+vim.cmd([[ nnoremap <A-e> :NeoTreeFocusToggle<CR> ]])
+vim.cmd([[ inoremap <A-e> :NeoTreeFocusToggle<CR>l ]])
+vim.cmd([[ vnoremap <A-e> :NeoTreeFocusToggle<CR> ]])
 
 
 -- Find -> Telescope -- TODO -- ESTA DANDO ERRO

@@ -5,3 +5,6 @@ vim.cmd([[
   set timeoutlen=500 -- tempo para chamar a tecla leader
  ]])
 
+// TODO
+-- NAVEGAR ENTRE BUFFERS ABERTOS -> VER TODOS ABERTOS -> NAVEGAR
+
