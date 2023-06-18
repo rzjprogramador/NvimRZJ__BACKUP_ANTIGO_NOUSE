@@ -9,9 +9,8 @@ vim.cmd([[ syntax enable  ]])
 vim.cmd([[ let extension = expand('%:e') ]])
 vim.cmd([[ let filenamev = expand('%:t') ]])
 
+-- SET MAPLEADER -> TODO
 
-
--- TODO ???
 
 vim.cmd([[ set cursorline ]])
 -- Ativar destaque da linha atual : Enable highlighting of the current line

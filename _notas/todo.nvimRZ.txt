@@ -2,5 +2,6 @@
 -- SET MAP LEADER
 vim.cmd([[
   let mapleader = ","
+  set timeoutlen=500 -- tempo para chamar a tecla leader
  ]])
 
