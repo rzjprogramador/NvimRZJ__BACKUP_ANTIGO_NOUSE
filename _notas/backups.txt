@@ -1,0 +1,6 @@
+-- explorer sidebar -> NeoTreeFocusToggle
+vim.cmd([[ nnoremap <A-e> :NeoTreeFocusToggle<CR> ]])
+-- vim.cmd([[ nnoremap <A-e> :NeoTreeFocusToggle<CR>R ]]) -- INICIAR COM TOGGLE ATIVO
+vim.cmd([[ inoremap <A-e> :NeoTreeFocusToggle<CR>l ]])
+vim.cmd([[ vnoremap <A-e> :NeoTreeFocusToggle<CR> ]])
+
