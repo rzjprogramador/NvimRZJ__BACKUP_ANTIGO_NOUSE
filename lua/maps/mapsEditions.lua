@@ -68,11 +68,14 @@ vim.cmd([[
 
 ]])
 
--- Comentar -- Com cc e cv --
+-- Toggle Comentario 2 Barras -- Com F7 --
 vim.cmd([[
-  "comment (cc) and uncomment (cu) code
-noremap   <silent> cc :s,^\(\s*\)[^// \t]\@=,\1// ,e<CR>:nohls<CR>zvj
-noremap   <silent> cv :s,^\(\s*\)// \s\@!,\1,e<CR>:nohls<CR>zvj
+  function! CommentToggle()
+    execute ':silent! s/\([^ ]\)/\/\/ \1/'
+    execute ':silent! s/^\( *\)\/\/ \/\/ /\1/'
+  endfunction
+
+  map <F7> :call CommentToggle()<CR>
 ]])
 
 
