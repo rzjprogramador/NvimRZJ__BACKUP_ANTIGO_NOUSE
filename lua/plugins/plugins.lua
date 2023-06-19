@@ -13,8 +13,8 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'tamton-aquib/staline.nvim'
   use 'lukas-reineke/indent-blankline.nvim'
-  use 'tpope/vim-surround'
-  use 'windwp/nvim-autopairs'
+  use 'jiangmiao/auto-pairs' -- este indicado pelo hundcode >> funciona automaticamente sem configs.
+  -- use 'windwp/nvim-autopairs' -- este auto pairs nao funciona automaticamente
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
