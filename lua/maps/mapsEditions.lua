@@ -1,10 +1,10 @@
 -- Maps EDITIONS --
 
--- Sair com confirmação --
-vim.cmd([[ map <C-q> :q<CR> ]])
-vim.cmd([[ nnoremap <C-q> :q<CR> ]])
-vim.cmd([[ inoremap <C-q> <Esc>:q<CR>l ]])
-vim.cmd([[ vnoremap <C-q> <Esc>:q<CR> ]])
+-- Sair Forçado --
+vim.cmd([[ map <C-q> :q!<CR> ]])
+vim.cmd([[ nnoremap <C-q> :q!<CR> ]])
+vim.cmd([[ inoremap <C-q> <Esc>:q!<CR>l ]])
+vim.cmd([[ vnoremap <C-q> <Esc>:q!<CR> ]])
 
 -- Salvar ---
 vim.cmd([[ nnoremap <C-s> :w<CR> ]])
@@ -35,11 +35,15 @@ vim.cmd([[
   vnoremap . >gv
  ]])
 
--- TABS --
-vim.cmd([[
-  noremap <Tab> :tabnext<CR>
-]])
+ -- TABS --
+ vim.cmd([[
+   noremap <Tab> :tabnext<CR>
+   ]])
 
+-- duplicar linha
+vim.cmd([[ nnoremap <C-down> :t.<CR> ]])
+vim.cmd([[ vnoremap <C-down> :t.<CR> ]])
+-- modo insercao - proFuturo.
 
 
 -- TRANSFORMAR -> TOGGLE ==> MAIUSCULA -> MINUSCULA
