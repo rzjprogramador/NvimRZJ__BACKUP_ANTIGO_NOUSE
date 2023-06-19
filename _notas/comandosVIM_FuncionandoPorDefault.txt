@@ -1,7 +1,0 @@
--- COMANDOS VIM e NVIM FUNCIONANDO PRO DEFAULT
-
--- identacao Tab >> em modo insercaoEditar  >> C-t identa tab -- C-d desindenta recua Tab
-
--- MOVIMENTAÇÃO
--- Mover linha e selecionados : <A-k> Alt+k esta movendo linha e selecionados para cima
--- Mover linha e selecionados : <A-j> Alt+j esta movendo linha e selecionados para baixo
