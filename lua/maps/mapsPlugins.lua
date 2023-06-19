@@ -20,3 +20,13 @@ vim.cmd([[ vnoremap <A-b> :Telescope buffers<CR> ]])
 -- Telescope - procurar com grep
 vim.cmd([[ nnoremap <C-k> :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ") })<CR>
 ]])
+
+-- by VIM_AIRLINE
+vim.cmd([[
+  let g:airline_left_sep = ''
+  " powerline symbols
+  let g:airline_left_sep = ''
+  let g:airline_left_alt_sep = ''
+  let g:airline_right_sep = ''
+  let g:airline_right_alt_sep = ''
+]])
