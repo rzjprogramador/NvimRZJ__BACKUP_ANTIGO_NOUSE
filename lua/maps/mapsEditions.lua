@@ -16,10 +16,10 @@ vim.cmd([[ vnoremap <C-down> :t.<CR> ]])
 -- modo insercao - proFuturo.
 
 -- Sair Forçado --
-vim.cmd([[ map <C-q> :q!<CR> ]])
-vim.cmd([[ nnoremap <C-q> :q!<CR> ]])
-vim.cmd([[ inoremap <C-q> <Esc>:q!<CR>l ]])
-vim.cmd([[ vnoremap <C-q> <Esc>:q!<CR> ]])
+vim.cmd([[ map <A-q> :q!<CR> ]])
+vim.cmd([[ nnoremap <A-q> :q!<CR> ]])
+vim.cmd([[ inoremap <A-q> <Esc>:q!<CR>l ]])
+vim.cmd([[ vnoremap <A-q> <Esc>:q!<CR> ]])
 
 -- Salvar ---
 vim.cmd([[ nnoremap <C-s> :w<CR> ]])
@@ -38,7 +38,7 @@ vim.cmd([[ vnoremap <C-z> <Esc>:undo<CR> ]])
 -- proximo buffer
 vim.cmd([[ map <S-Tab> :bnext<CR> ]])
 -- deletar buffer
-vim.cmd([[ map <C-w> :bdelete<CR> ]])
+vim.cmd([[ map <A-w> :bdelete<CR> ]])
 
 -- identar Tab -> somente as teclas < para voltar - > para  --
 vim.cmd([[
