@@ -1,15 +1,13 @@
 
-
 function MyFunctionFoo() {
   return `Ola mundo!`
 }
 
 function two() {
-  const foo = 'foo'
   return `Ola mundo funcionando auto pairs`
 }
 
-console.log(MyFunctionFoo)
+console.log(MyFunctionFoo())
+console.log(two())
 
-console.log('Hello Word')
 

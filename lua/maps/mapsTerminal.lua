@@ -7,7 +7,7 @@ vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
 
 
 -- TERMINAL Vsplit Vertical --
-vim.cmd([[ noremap <C-t> :vsplit term://bash<CR> ]])
+vim.cmd([[ noremap <A-t> :vsplit term://bash<CR> ]])
 
 vim.cmd [[
   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
