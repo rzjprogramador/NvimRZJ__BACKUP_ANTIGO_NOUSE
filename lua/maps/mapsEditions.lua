@@ -68,6 +68,13 @@ vim.cmd([[
 
 ]])
 
+-- Comentar -- Com cc e cv --
+vim.cmd([[
+  "comment (cc) and uncomment (cu) code
+noremap   <silent> cc :s,^\(\s*\)[^// \t]\@=,\1// ,e<CR>:nohls<CR>zvj
+noremap   <silent> cv :s,^\(\s*\)// \s\@!,\1,e<CR>:nohls<CR>zvj
+]])
+
 
 
 
