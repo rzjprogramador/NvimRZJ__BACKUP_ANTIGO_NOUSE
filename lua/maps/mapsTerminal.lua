@@ -8,6 +8,13 @@ vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
 
 -- TERMINAL Vsplit Vertical --
 vim.cmd([[ noremap <C-t> :vsplit term://bash<CR> ]])
+
+vim.cmd [[
+  autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
+  autocmd TermOpen * startinsert
+  autocmd BufLeave term://* stopinsert
+]]
+
 -- escolher bash do vsplit terminal : mudar entre [ bash || zsh]
 
 -- vim.cmd([[ noremap <C-l> :let @/=<CR>]]) -- Limpa Clean  --> TODO
