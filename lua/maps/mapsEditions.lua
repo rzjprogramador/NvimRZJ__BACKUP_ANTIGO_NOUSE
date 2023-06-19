@@ -15,7 +15,7 @@ vim.cmd([[ nnoremap <C-down> :t.<CR> ]])
 vim.cmd([[ vnoremap <C-down> :t.<CR> ]])
 -- modo insercao - proFuturo.
 
--- Refazer : alem d erefazer >> tambem é solucao para conflito de zoom do terminator --
+-- Refazer : alem de refazer >> tambem é solucao para conflito de zoom do terminator --
 vim.cmd([[ map <C-r> g+ ]])
 vim.cmd([[ nnoremap <C-r> g+ ]])
 vim.cmd([[ inoremap <C-r> <Esc>g+ ]])
@@ -93,6 +93,14 @@ vim.cmd([[
   endfunction
 
   map <F7> :call CommentToggle()<CR>
+]])
+
+-- Redimensionar janelas >Somente com SETAS LATERAIS em Normal mode > tanto painel e terminal --
+vim.cmd([[
+  nnoremap <Up>    :resize -2<CR>
+  nnoremap <Down>  :resize +2<CR>
+  nnoremap <Left>  :vertical resize -2<CR>
+  nnoremap <Right> :vertical resize +2<CR>
 ]])
 
 
