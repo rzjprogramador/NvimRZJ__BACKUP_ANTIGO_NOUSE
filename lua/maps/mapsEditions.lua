@@ -1,7 +1,7 @@
 -- Maps EDITIONS --
 
 -- Mover linhas --
-vim.cmd([[ 
+vim.cmd([[
   nnoremap <S-down> :m .+1<CR>==
   nnoremap <S-up> :m .-2<CR>==
   inoremap <S-down> <Esc>:m .+1<CR>==gi
@@ -14,6 +14,12 @@ vim.cmd([[
 vim.cmd([[ nnoremap <C-down> :t.<CR> ]])
 vim.cmd([[ vnoremap <C-down> :t.<CR> ]])
 -- modo insercao - proFuturo.
+
+-- Refazer : alem d erefazer >> tambem é solucao para conflito de zoom do terminator --
+vim.cmd([[ map <C-r> g+ ]])
+vim.cmd([[ nnoremap <C-r> g+ ]])
+vim.cmd([[ inoremap <C-r> <Esc>g+ ]])
+vim.cmd([[ vnoremap <C-r> <Esc>g+ ]])
 
 -- Sair Forçado --
 vim.cmd([[ map <A-q> :q!<CR> ]])
@@ -69,11 +75,11 @@ vim.cmd([[
 -- SUBSTITUIÇÃO TODAS OCORRENCIAS DIGITADAS
 -- para usar execute o atalho -> volte uma barra com a seta e digite A PROCURA -> após a proxima barra digite o que  vai substituir a procura encontrada
 vim.cmd([[
-  nnoremap <C-r> :%s///g<Left><Left>
-  nnoremap <C-rc> :%s///gc<Left><Left><Left>
+  nnoremap <A-s> :%s///g<Left><Left>
+  nnoremap <A-sc> :%s///gc<Left><Left><Left>
 
-  xnoremap <C-r> :s///g<Left><Left>
-  xnoremap <C-rc> :s///gc<Left><Left><Left>
+  xnoremap <A-s> :s///g<Left><Left>
+  xnoremap <A-sc> :s///gc<Left><Left><Left>
 
   vnoremap * y/\V<C-R>=escape(@",'/\')<CR><CR>
 
