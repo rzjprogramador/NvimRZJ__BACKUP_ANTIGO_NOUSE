@@ -1,7 +1,7 @@
 -- SETTINGS --
 
 vim.cmd([[ syntax on ]])
--- todo ???
+-- ajudar na syntaxe das linguagens
 
 vim.cmd([[ syntax enable  ]])
 -- Habilitar syntax highlighing
