@@ -104,7 +104,8 @@ vim.cmd([[ set clipboard=unnamedplus ]])
 vim.cmd([[ set bg=dark ]])
 vim.cmd([[ set termguicolors ]])
 
--- SET THEME --
-vim.cmd([[ colorscheme sobrio ]])
+-- SET THEME > DEFINIR O TEMA PRINCIPAL --
+vim.cmd([[ colorscheme dracula ]])
+-- vim.cmd([[ colorscheme sobrio ]])
 
 
