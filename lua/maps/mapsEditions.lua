@@ -24,6 +24,17 @@ vim.cmd([[ map <S-Tab> :bnext<CR> ]])
 -- deletar buffer
 vim.cmd([[ map <C-w> :bdelete<CR> ]])
 
+-- identar Tab -> somente as teclas < para voltar - > para  --
+vim.cmd([[
+  " Normal mode
+  nnoremap . >>
+  nnoremap , <<
+
+  " Visual mode
+  vnoremap , <gv
+  vnoremap . >gv
+ ]])
+
 -- TABS --
 vim.cmd([[
   noremap <Tab> :tabnext<CR>
