@@ -6,10 +6,22 @@ vim.cmd([[ syntax on ]])
 vim.cmd([[ syntax enable  ]])
 -- Habilitar syntax highlighing
 
+-- AutoSave
+vim.cmd([[ set autowriteall ]])
+
 vim.cmd([[ let extension = expand('%:e') ]])
 vim.cmd([[ let filenamev = expand('%:t') ]])
 
 -- SET MAPLEADER -> TODO
+
+-- DESIGN_COMPUTACIONAL --
+-- SET THEME > DEFINIR O TEMA PRINCIPAL --
+vim.cmd([[ colorscheme a23galaxy ]])
+-- vim.cmd([[ colorscheme dracula ]])
+-- vim.cmd([[ colorscheme sobrio ]])
+
+vim.cmd([[ set bg=dark ]])
+vim.cmd([[ set termguicolors ]])
 
 
 vim.cmd([[ set cursorline ]])
@@ -99,13 +111,3 @@ vim.cmd([[ set showtabline=1 ]])
 -- AREA TRANSFERENCIA NVIM >> LINUX --
 vim.cmd([[ set clipboard=unnamedplus ]])
 -- compartilhar de área de transferência entre o Vim e o Linux
-
--- DESIGN_COMPUTACIONAL --
-vim.cmd([[ set bg=dark ]])
-vim.cmd([[ set termguicolors ]])
-
--- SET THEME > DEFINIR O TEMA PRINCIPAL --
-vim.cmd([[ colorscheme dracula ]])
--- vim.cmd([[ colorscheme sobrio ]])
-
-
