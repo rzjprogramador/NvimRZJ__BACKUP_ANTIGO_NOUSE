@@ -6,7 +6,7 @@ vim.cmd([[ syntax on ]])
 vim.cmd([[ syntax enable  ]])
 -- Habilitar syntax highlighing
 
--- AutoSave
+-- AutoSave - TODO NAO FUNCIONANDO --
 vim.cmd([[ set autowriteall ]])
 
 vim.cmd([[ let extension = expand('%:e') ]])

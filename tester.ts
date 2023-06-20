@@ -19,4 +19,4 @@ console.log(MyFunctionFoo())
 console.log(two())
 
 const instancia1 = new MyClasseFoo('oi', 10)
-
+console.log(instancia1)
