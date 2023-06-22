@@ -2,7 +2,8 @@
 
 -- Comentario --
 vim.cmd([[ filetype plugin on ]])
--- ativa os plug-ins de tipo de arquivo - Essencial para comenatrio
+-- ativa os plug-ins de tipo de arquivo - Essencial para comentario
+-- NERDCo
 
 vim.cmd([[
   map cc <plug>NERDCommenterToggle
