@@ -26,10 +26,19 @@ vim.cmd([[
   vnoremap <S-up> :m '<-2<CR>gv=gv
 ]])
 
--- duplicar linha
-vim.cmd([[ nnoremap <C-down> :t.<CR> ]])
-vim.cmd([[ vnoremap <C-down> :t.<CR> ]])
--- modo insercao - proFuturo.
+-- Duplicar linha --
+vim.cmd([[
+  inoremap <C-down> <Esc>:t.<Esc>i
+  nnoremap <C-down> :t.<CR>
+  vnoremap <C-down> :t.<CR>
+]])
+
+-- Deletar Linha C-d
+vim.cmd([[
+  nnoremap <C-d> dd<CR>
+  inoremap <C-d> <Esc>dd<CR>
+  vnoremap <C-d> dd<Esc>i
+]])
 
 -- Refazer : alem de refazer >> tambem é solucao para conflito de zoom do terminator --
 vim.cmd([[ map <C-r> g+ ]])
