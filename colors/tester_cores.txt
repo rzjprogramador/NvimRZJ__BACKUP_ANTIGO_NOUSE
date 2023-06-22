@@ -1,3 +1,4 @@
 # TESTER CORES
 
-ex- cursor line: #16161E 
+ex- cursor line: #16161E
+
