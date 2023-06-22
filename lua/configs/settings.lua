@@ -14,20 +14,6 @@ vim.cmd([[ let filenamev = expand('%:t') ]])
 
 -- SET MAPLEADER -> TODO
 
--- DESIGN_COMPUTACIONAL --
--- SET THEME > DEFINIR O TEMA PRINCIPAL --
-vim.cmd([[ colorscheme theme_Drack ]])
--- vim.cmd([[ colorscheme a23galaxy ]])
--- vim.cmd([[ colorscheme dracula ]])
--- vim.cmd([[ colorscheme sobrio ]])
-
-vim.cmd([[ set bg=dark ]])
-vim.cmd([[ set termguicolors ]])
-
-
-vim.cmd([[ set cursorline ]])
--- Ativar destaque da linha atual : Enable highlighting of the current line
-
 vim.cmd([[ set noswapfile ]])
 -- desabilita criação de arquivo  backup .swp
 
@@ -112,3 +98,5 @@ vim.cmd([[ set showtabline=1 ]])
 -- AREA TRANSFERENCIA NVIM >> LINUX --
 vim.cmd([[ set clipboard=unnamedplus ]])
 -- compartilhar de área de transferência entre o Vim e o Linux
+
+

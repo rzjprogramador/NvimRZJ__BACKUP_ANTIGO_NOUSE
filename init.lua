@@ -1,5 +1,6 @@
 require("plugins.plugins")
 require("configs.settings")
+require("configs.setUX")
 require("maps.mapsEditions")
 require("maps.mapsFunctions")
 require("maps.mapsPlugins")

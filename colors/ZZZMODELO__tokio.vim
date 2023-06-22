@@ -4,8 +4,8 @@ syntax reset
 
 let g:colors_name='theme_tokio'
 
-hi Boolean            guibg=NONE         guifg=#ffffff
-hi Character          guibg=NONE         guifg=#fafafa
+hi Boolean            guibg=NONE         guifg=#ffff00
+hi Character          guibg=NONE         guifg=#ffff00
 hi ColorColumn        guibg=NONE         guifg=#ffffff
 hi Comment            guibg=NONE         guifg=#7dcfff
 hi Condtional         guibg=NONE         guifg=#ffffff
@@ -70,7 +70,7 @@ hi TabLineFill        guibg=NONE         guifg=#ffffff
 hi Tag                guibg=NONE         guifg=#ffffff
 hi Title              guibg=NONE         guifg=#ffffff
 hi Todo               guibg=NONE         guifg=#585858
-hi Type               guibg=NONE         guifg=#af8787
+hi Type               guibg=NONE         guifg=#ffff00
 hi Typedef            guibg=NONE         guifg=#5f00af
 hi VertSplit          guibg=NONE         guifg=#ffffff
 hi Visual             guibg=#b4f9f8      guifg=#000000

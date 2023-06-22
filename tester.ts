@@ -15,6 +15,18 @@ class MyClasseFoo {
   }
 }
 
+interface Foo {
+  campo1: string
+  campo2: boolean
+}
+
+type TipoFoo = { campo3: Foo, campo4: number }
+
+const verdade = true
+const falso = falsee
+
+const fooConstante = 'bar'
+
 console.log(MyFunctionFoo())
 console.log(two())
 

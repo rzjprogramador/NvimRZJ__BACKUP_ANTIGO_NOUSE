@@ -7,17 +7,18 @@ syntax reset
 let g:colors_name='theme_Drack'
 "var foo='#ff0066'
 "var foo="#ffcc00"
+" blue: clean: #83d9ec,
 
 
 hi Boolean            guibg=NONE         guifg=#ffffff
-hi Character          guibg=NONE         guifg=#fafafa
+hi Character          guibg=NONE         guifg=#ffff00
 hi ColorColumn        guibg=NONE         guifg=#ffffff
 hi Comment            guibg=NONE         guifg=#7dcfff
 hi Condtional         guibg=NONE         guifg=#ffffff
 hi Constant           guibg=NONE         guifg=#ffffff
 hi CursorColumn       guibg=NONE         guifg=#ffffff
 hi Cursor             guibg=NONE         guifg=#ffffff
-hi CursorLine         guibg=Red         guifg=#ffffff     gui=bold
+hi CursorLine         guibg=Blue         guifg=#ffffff     gui=bold
 hi CursorLineNr       guibg=NONE         guifg=#ffffff     gui=bold gui=bold
 hi Debug              guibg=NONE         guifg=#ffffff
 hi Define             guibg=NONE         guifg=#ffffff
@@ -33,11 +34,11 @@ hi Exception          guibg=NONE         guifg=#ffffff
 hi Float              guibg=NONE         guifg=#ffffff
 hi FoldColumn         guibg=NONE         guifg=#ffffff
 hi Folded             guibg=NONE         guifg=#ffffff
-hi Function           guibg=NONE         guifg=#B246A9     gui=bold
+hi Function           guibg=NONE         guifg=#50fa7b     gui=bold
 hi Identifier         guibg=NONE         guifg=#9aa5ce
 hi Include            guibg=NONE         guifg=#ffffff
 hi IncSearch          guibg=NONE         guifg=#ffffff
-hi Keyword            guibg=NONE         guifg=#ff0066
+hi Keyword            guibg=NONE         guifg=#ff79c6
 hi Label              guibg=NONE         guifg=#ffffff
 hi LineNr             guibg=NONE         guifg=#414868
 hi Macro              guibg=NONE         guifg=#ffffff
