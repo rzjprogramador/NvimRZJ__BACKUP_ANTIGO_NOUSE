@@ -7,3 +7,9 @@ vim.cmd([[
   highlight NonText cterm=NONE ctermbg=17 gui=NONE guibg=#00005f
   highlight CursorLine cterm=NONE ctermbg=17 gui=NONE guibg=#090c10
 ]])
+
+-- SET TEMA -- EM STANDBY
+-- vim.cmd([[ colorscheme dracula ]])
+-- vim.cmd([[ colorscheme theme_Drack ]])
+-- vim.cmd([[ colorscheme a23galaxy ]])
+-- vim.cmd([[ colorscheme sobrio ]])

@@ -11,12 +11,6 @@ require'nvim-treesitter.configs'.setup {
 }
 
 
--- VimMove
--- Alt + k → Move to Up
--- Alt + j → Move to Down
--- Alt + l → Move to Right(Visual Mode to 2 or more chars, Ex.: //)
--- Alt + h → Move to Left(Visual Mode to 2 or more chars. Ex.: //)
-
 --if filenamel == nil then
 if filenamel == "" then
   --print("Empty variable!")
