@@ -1,5 +1,21 @@
 -- Maps EDITIONS --
 
+-- Salvar --
+vim.cmd([[
+  nnoremap <C-s> :w<CR>
+  inoremap <C-s> <Esc>:w<CR>l
+  vnoremap <C-s> <Esc>:w<CR>
+]])
+
+-- Copiar >> Colar -- Volta em modo insert --
+vim.cmd([[
+  noremap <C-c> "+y
+  inoremap <C-c> "+y<CR>
+
+  noremap <C-v> "+p
+  inoremap <C-v> <Esc>"+p<Esc>i
+]])
+
 -- Mover linhas --
 vim.cmd([[
   nnoremap <S-down> :m .+1<CR>==
@@ -27,10 +43,7 @@ vim.cmd([[ nnoremap <A-q> :q!<CR> ]])
 vim.cmd([[ inoremap <A-q> <Esc>:q!<CR>l ]])
 vim.cmd([[ vnoremap <A-q> <Esc>:q!<CR> ]])
 
--- Salvar ---
-vim.cmd([[ nnoremap <C-s> :w<CR> ]])
-vim.cmd([[ inoremap <C-s> <Esc>:w<CR>l ]])
-vim.cmd([[ vnoremap <C-s> <Esc>:w<CR> ]])
+
 -- Selecionar Tudo
 vim.cmd([[ map <C-a> ggVG ]])
 

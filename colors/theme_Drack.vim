@@ -4,19 +4,20 @@
 highlight clear
 syntax reset
 
-let g:colors_name='a23galaxy'
+let g:colors_name='theme_Drack'
 "var foo='#ff0066'
 "var foo="#ffcc00"
 
+
 hi Boolean            guibg=NONE         guifg=#ffffff
-hi Character          guibg=NONE         guifg=#ffffff
+hi Character          guibg=NONE         guifg=#fafafa
 hi ColorColumn        guibg=NONE         guifg=#ffffff
 hi Comment            guibg=NONE         guifg=#7dcfff
 hi Condtional         guibg=NONE         guifg=#ffffff
 hi Constant           guibg=NONE         guifg=#ffffff
 hi CursorColumn       guibg=NONE         guifg=#ffffff
 hi Cursor             guibg=NONE         guifg=#ffffff
-hi CursorLine         guibg=#16161E      guifg=#ffffff     gui=bold
+hi CursorLine         guibg=Red         guifg=#ffffff     gui=bold
 hi CursorLineNr       guibg=NONE         guifg=#ffffff     gui=bold gui=bold
 hi Debug              guibg=NONE         guifg=#ffffff
 hi Define             guibg=NONE         guifg=#ffffff

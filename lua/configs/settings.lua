@@ -16,7 +16,8 @@ vim.cmd([[ let filenamev = expand('%:t') ]])
 
 -- DESIGN_COMPUTACIONAL --
 -- SET THEME > DEFINIR O TEMA PRINCIPAL --
-vim.cmd([[ colorscheme a23galaxy ]])
+vim.cmd([[ colorscheme theme_Drack ]])
+-- vim.cmd([[ colorscheme a23galaxy ]])
 -- vim.cmd([[ colorscheme dracula ]])
 -- vim.cmd([[ colorscheme sobrio ]])
 
