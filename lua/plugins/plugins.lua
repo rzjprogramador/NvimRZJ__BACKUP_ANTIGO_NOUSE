@@ -4,6 +4,7 @@ return require('packer').startup(function()
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
   use { "catppuccin/nvim", as = "catppuccin" }
+  use 'preservim/nerdcommenter'
   use 'dracula/vim'
   use 'wbthomason/packer.nvim'
   use 'terroo/vim-simple-emoji'

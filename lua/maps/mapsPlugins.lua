@@ -1,5 +1,15 @@
 -- Maps PLUGINS --
 
+-- Comentario --
+vim.cmd([[ filetype plugin on ]])
+-- ativa os plug-ins de tipo de arquivo - Essencial para comenatrio
+
+vim.cmd([[
+  map cc <plug>NERDCommenterToggle
+  nmap cc <plug>NERDCommenterToggle
+  inoremap cc <C-o>:call NERDComment(0,"toggle")<C-m>
+]]) -- maps comentario NERDCommenter
+
 -- EXPLORER
 -- explorer Float -> NeoTreeFloatToggle
 vim.cmd([[ nnoremap <A-e> :NeoTreeFloatToggle<CR> ]])

@@ -21,6 +21,7 @@ interface Foo {
 }
 
 type TipoFoo = { campo3: Foo, campo4: number }
+const objFoo: TipoFoo = { campo3: 'foo', campo4: 10 } 
 
 const verdade = true
 const falso = false
@@ -28,6 +29,7 @@ const falso = false
 const fooConstante = 'bar'
 
 console.log(MyFunctionFoo())
+console.log(objFoo)
 console.log(two())
 
 const instancia1 = new MyClasseFoo('oi', 10)

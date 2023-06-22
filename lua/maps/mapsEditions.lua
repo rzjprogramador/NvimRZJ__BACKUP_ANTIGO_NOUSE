@@ -107,15 +107,7 @@ vim.cmd([[
 
 ]])
 
--- Toggle Comentario 2 Barras -- Com F7 --
-vim.cmd([[
-  function! CommentToggle()
-    execute ':silent! s/\([^ ]\)/\/\/ \1/'
-    execute ':silent! s/^\( *\)\/\/ \/\/ /\1/'
-  endfunction
 
-  map <F7> :call CommentToggle()<CR>
-]])
 
 -- Redimensionar janelas >Somente com SETAS LATERAIS em Normal mode > tanto painel e terminal --
 vim.cmd([[
