@@ -10,28 +10,6 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
---NvimTree
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-vim.opt.termguicolors = true
-require("nvim-tree").setup()
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
-      },
-    },
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-})
 
 -- VimMove
 -- Alt + k → Move to Up
@@ -42,5 +20,5 @@ require("nvim-tree").setup({
 --if filenamel == nil then
 if filenamel == "" then
   --print("Empty variable!")
-  require("notify")("Bem-vindo(a) ao TerrooNvim!")
+  require("notify")("Bem-vindo(a) ao NvimRZ!")
 end

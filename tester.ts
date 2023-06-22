@@ -23,7 +23,7 @@ interface Foo {
 type TipoFoo = { campo3: Foo, campo4: number }
 
 const verdade = true
-const falso = falsee
+const falso = false
 
 const fooConstante = 'bar'
 

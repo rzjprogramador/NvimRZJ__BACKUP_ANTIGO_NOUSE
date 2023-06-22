@@ -3,6 +3,7 @@ vim.cmd [[packadd packer.nvim]]
 return require('packer').startup(function()
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+  use { "catppuccin/nvim", as = "catppuccin" }
   use 'dracula/vim'
   use 'wbthomason/packer.nvim'
   use 'terroo/vim-simple-emoji'
