@@ -1,9 +1,9 @@
 -- Maps TERMINAL --
 
 -- terminal float
-vim.cmd([[ nnoremap <C-t> :FloatermNew<CR> ]])
-vim.cmd([[ inoremap <C-t> <Esc>:FloatermNew<CR>l ]])
-vim.cmd([[ vnoremap <C-t> <Esc>:FloatermNew<CR> ]])
+vim.cmd([[ nnoremap <S-t> :FloatermNew<CR> ]])
+vim.cmd([[ inoremap <S-t> <Esc>:FloatermNew<CR>l ]])
+vim.cmd([[ vnoremap <S-t> <Esc>:FloatermNew<CR> ]])
 
 
 -- TERMINAL Vsplit Vertical --

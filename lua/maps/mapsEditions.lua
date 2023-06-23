@@ -16,11 +16,11 @@ vim.cmd([[
   inoremap <C-v> <Esc>"+p<Esc>i
 ]])
 
--- Deletar Linha C-d
+-- Deletar Linha --
 vim.cmd([[
-  nnoremap <C-d> dd<CR>
-  inoremap <C-d> <Esc>dd<CR>
-  vnoremap <C-d> dd<Esc>i
+  nnoremap dd dd<CR>
+  inoremap dd <Esc>dd<CR>
+  vnoremap dd dd<Esc>i
 ]])
 
 -- Refazer : alem de refazer >> tambem é solucao para conflito de zoom do terminator --
@@ -51,10 +51,13 @@ vim.cmd([[ map <S-Tab> :bnext<CR> ]])
 -- deletar buffer
 vim.cmd([[ map <A-w> :bdelete<CR> ]])
 
--- identar Tab -> somente as teclas < para voltar - > para  --
+-- identar >> iEsta funcionando com  Maior e Menor Que < > sendo com alt ou ctrl ou sozinho rs --
 vim.cmd([[
   nnoremap . >>
   nnoremap , <<
+
+  inoremap <C-.> <Esc><gv
+  inoremap <C-,> <Esc>>gv
 
   vnoremap , <gv
   vnoremap . >gv
