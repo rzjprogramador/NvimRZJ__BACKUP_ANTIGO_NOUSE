@@ -23,8 +23,8 @@ interface Foo {
 type TipoFoo = { campo3: Foo, campo4: number }
 const objFoo: TipoFoo = { campo3: 'foo', campo4: 10 } 
 
-const verdade = true
 const falso = false
+const verdade = true
 
 const fooConstante = 'bar'
 

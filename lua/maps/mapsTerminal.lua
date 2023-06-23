@@ -1,13 +1,13 @@
 -- Maps TERMINAL --
 
 -- terminal float
-vim.cmd([[ nnoremap <C-Space> :FloatermNew<CR> ]])
-vim.cmd([[ inoremap <C-Space> <Esc>:FloatermNew<CR>l ]])
-vim.cmd([[ vnoremap <C-Space> <Esc>:FloatermNew<CR> ]])
+vim.cmd([[ nnoremap <C-t> :FloatermNew<CR> ]])
+vim.cmd([[ inoremap <C-t> <Esc>:FloatermNew<CR>l ]])
+vim.cmd([[ vnoremap <C-t> <Esc>:FloatermNew<CR> ]])
 
 
 -- TERMINAL Vsplit Vertical --
-vim.cmd([[ noremap <A-t> :vsplit term://bash<CR> ]])
+vim.cmd([[ nmap tt :vsplit term://bash<CR> ]])
 
 vim.cmd [[
   autocmd TermOpen * setlocal listchars= nonumber norelativenumber nocursorline
@@ -15,6 +15,7 @@ vim.cmd [[
   autocmd BufLeave term://* stopinsert
 ]]
 
+-- test test bla bla tt ooott t ooooo t
 -- escolher bash do vsplit terminal : mudar entre [ bash || zsh]
 
 -- vim.cmd([[ noremap <C-l> :let @/=<CR>]]) -- Limpa Clean  --> TODO

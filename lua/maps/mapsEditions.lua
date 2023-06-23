@@ -16,23 +16,6 @@ vim.cmd([[
   inoremap <C-v> <Esc>"+p<Esc>i
 ]])
 
--- Mover linhas --
-vim.cmd([[
-  nnoremap <S-down> :m .+1<CR>==
-  nnoremap <S-up> :m .-2<CR>==
-  inoremap <S-down> <Esc>:m .+1<CR>==gi
-  inoremap <S-up> <Esc>:m .-2<CR>==gi
-  vnoremap <S-down> :m '>+1<CR>gv=gv
-  vnoremap <S-up> :m '<-2<CR>gv=gv
-]])
-
--- Duplicar linha --
-vim.cmd([[
-  inoremap <C-down> <Esc>:t.<Esc>i
-  nnoremap <C-down> :t.<CR>
-  vnoremap <C-down> :t.<CR>
-]])
-
 -- Deletar Linha C-d
 vim.cmd([[
   nnoremap <C-d> dd<CR>
@@ -70,11 +53,9 @@ vim.cmd([[ map <A-w> :bdelete<CR> ]])
 
 -- identar Tab -> somente as teclas < para voltar - > para  --
 vim.cmd([[
-  " Normal mode
   nnoremap . >>
   nnoremap , <<
 
-  " Visual mode
   vnoremap , <gv
   vnoremap . >gv
  ]])
@@ -107,14 +88,23 @@ vim.cmd([[
 
 ]])
 
-
+-- Movimentacoes --
+-- Mover linhas --
+vim.cmd([[
+  nnoremap <S-down> :m .+1<CR>==
+  nnoremap <S-up> :m .-2<CR>==
+  inoremap <S-down> <Esc>:m .+1<CR>==gi
+  inoremap <S-up> <Esc>:m .-2<CR>==gi
+  vnoremap <S-down> :m '>+1<CR>gv=gv
+  vnoremap <S-up> :m '<-2<CR>gv=gv
+]])
 
 -- Redimensionar janelas >Somente com SETAS LATERAIS em Normal mode > tanto painel e terminal --
 vim.cmd([[
-  nnoremap <Up>    :resize -2<CR>
-  nnoremap <Down>  :resize +2<CR>
-  nnoremap <Left>  :vertical resize -2<CR>
-  nnoremap <Right> :vertical resize +2<CR>
+  nnoremap <C-up>    :resize -2<CR>
+  nnoremap <C-down>  :resize +2<CR>
+  nnoremap <C-left>  <Esc>:vertical resize -2<CR>
+  nnoremap <C-right> <Esc>:vertical resize +2<CR>
 ]])
 
 
